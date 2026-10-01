@@ -1,0 +1,725 @@
+/* ==========================================================================
+   1. VARIABLES DE COULEUR & RESET
+   ========================================================================== */
+:root {
+    --dark-navy: #151828;      /* Fond sombre bandeau supérieur & footer */
+    --accent-orange: #ff6b00;   /* Couleur orange d'accentuation */
+    --white: #ffffff;
+    --text-dark: #1f2335;
+    --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main-content {
+    flex: 1; /* Pousse le footer vers le bas */
+}
+
+/* ==========================================================================
+   2. BANDEAU SUPÉRIEUR (RÉSEAUX SOCIAUX)
+   ========================================================================== */
+.top-bar {
+    background-color: var(--dark-navy);
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-links a {
+    color: var(--white);
+    margin-left: 15px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-orange);
+}
+
+/* ==========================================================================
+   3. BARRE DE NAVIGATION
+   ========================================================================== */
+.main-header {
+    background-color: var(--white);
+    padding: 18px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 1000;
+}
+
+.logo-bold {
+    color: #ff6b00;
+}
+
+.logo-orange {
+    color: #111111;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 1rem;
+    font-weight: 800px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+    color: var(--accent-orange);
+    border-bottom: 2px solid var(--accent-orange);
+    padding-bottom: 4px;
+}
+/* ==========================================================
+   HERO
+========================================================== */
+
+.parents-hero {
+    background: #10102f;
+    color: #fff;
+    padding: 85px 20px 90px;
+    text-align: center;
+}
+
+.parents-label,
+.section-label {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    background: #ffad00;
+    color: #10102f;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.parents-hero h1 {
+    max-width: 850px;
+    margin: 25px auto;
+
+    font-size: 44px;
+    line-height: 1.15;
+}
+
+.parents-hero-intro {
+    max-width: 760px;
+    margin: 15px auto;
+
+    color: #dedee8;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.parents-hero-highlight {
+    max-width: 720px;
+    margin: 30px auto 0;
+
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+
+/* ==========================================================
+   TITRES DE SECTIONS
+========================================================== */
+
+.parents-section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.parents-section-title h2 {
+    max-width: 800px;
+    margin: 20px auto 15px;
+
+    font-size: 31px;
+    line-height: 1.25;
+}
+
+.parents-section-title p {
+    max-width: 700px;
+    margin: 0 auto;
+
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* ==========================================================
+   SITUATIONS
+========================================================== */
+
+.parents-situations {
+    padding: 80px 20px;
+    background: #f4f5f8;
+}
+
+.parents-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+
+    max-width: 950px;
+    margin: 0 auto;
+    border-left: 5px solid var(--orange);
+}
+
+
+/* ==========================================================
+   CARTES
+========================================================== */
+
+.parents-card {
+    background: #fff;
+
+    padding: 32px;
+
+    border: 1px solid #dedfe5;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    border-left: 5px solid var(--orange);
+}
+
+.parents-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.parents-card-number {
+    display: block;
+
+    margin-bottom: 16px;
+
+    color: #ff9f00;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.parents-card h3 {
+    margin: 0 0 14px;
+
+    color: #10102f;
+
+    font-size: 19px;
+    line-height: 1.3;
+}
+
+.parents-card p {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.parents-card .card-highlight {
+    margin-top: 15px;
+
+    color: #10102f;
+    font-weight: 600;
+}
+
+
+/* ==========================================================
+   BLOC IMPORTANT
+========================================================== */
+
+.parents-important {
+    padding: 80px 20px;
+
+    background: #10102f;
+    color: #fff;
+}
+
+.parents-important-box {
+    max-width: 900px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.section-label-dark {
+    background: #ffad00;
+}
+
+.parents-important h2 {
+    margin: 25px auto;
+
+    max-width: 800px;
+
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.parents-important p {
+    max-width: 750px;
+    margin: 15px auto;
+
+    color: #ddd;
+
+    line-height: 1.8;
+}
+
+.parents-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    max-width: 750px;
+
+    margin: 30px auto;
+}
+
+.parents-keywords span {
+    padding: 10px 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    color: #fff;
+
+    font-size: 12px;
+}
+
+.important-conclusion {
+    margin-top: 30px !important;
+}
+
+
+/* ==========================================================
+   NOTRE DEMARCHE
+========================================================== */
+
+.parents-approach {
+    padding: 80px 20px;
+
+    background: #fff;
+}
+
+.approach-cards {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.approach-card {
+    min-height: 260px;
+}
+
+
+/* ==========================================================
+   ACCOMPAGNEMENT
+========================================================== */
+
+.parents-support {
+    padding: 80px 20px;
+
+    background: #f4f5f8;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.support-card {
+    background: #fff;
+
+    padding: 32px;
+
+    border: 1px solid #dedfe5;
+}
+
+.support-card h3 {
+    margin: 0 0 15px;
+
+    color: #10102f;
+
+    font-size: 19px;
+    line-height: 1.35;
+}
+
+.support-card p {
+    margin: 0;
+
+    color: #555;
+
+    line-height: 1.7;
+}
+
+.support-line {
+    margin-top: 25px;
+    padding-top: 18px;
+
+    border-top: 2px solid #ffad00;
+
+    color: #10102f;
+
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+
+/* ==========================================================
+   ROLE DU PARENT
+========================================================== */
+
+.parents-role {
+    padding: 80px 20px;
+
+    background: #fff;
+}
+
+.parents-role-box {
+    max-width: 900px;
+    margin: 0 auto;
+
+    padding: 45px;
+
+    border-left: 5px solid #ffad00;
+
+    background: #f4f5f8;
+}
+
+.parents-role-box h2 {
+    max-width: 700px;
+
+    margin: 20px 0;
+
+    color: #10102f;
+
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.parents-role-box p {
+    max-width: 780px;
+
+    color: #555;
+
+    line-height: 1.8;
+}
+
+.parents-role-highlight {
+    margin-top: 30px;
+    padding-top: 25px;
+
+    border-top: 1px solid #d5d5dc;
+
+    color: #10102f;
+
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.8;
+}
+
+
+/* ==========================================================
+   RASSURANCE
+========================================================== */
+
+.parents-reassurance {
+    padding: 80px 20px;
+
+    background: #10102f;
+    color: #fff;
+}
+
+.reassurance-box {
+    max-width: 900px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.reassurance-box h2 {
+    max-width: 750px;
+
+    margin: 25px auto;
+
+    font-size: 30px;
+    line-height: 1.35;
+}
+
+.reassurance-box > p {
+    max-width: 750px;
+
+    margin: 15px auto;
+
+    color: #ddd;
+
+    line-height: 1.8;
+}
+
+.reassurance-questions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+
+    max-width: 800px;
+
+    margin: 35px auto;
+}
+
+.reassurance-questions span {
+    padding: 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    color: #fff;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.reassurance-conclusion {
+    margin-top: 35px !important;
+}
+
+
+/* ==========================================================
+   CTA FINAL
+========================================================== */
+
+.parents-cta {
+    padding: 90px 20px;
+
+    background: #f4f5f8;
+
+    text-align: center;
+}
+
+.parents-cta h2 {
+    max-width: 750px;
+
+    margin: 25px auto 18px;
+
+    color: #10102f;
+
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.parents-cta p {
+    max-width: 700px;
+
+    margin: 10px auto;
+
+    color: #555;
+
+    line-height: 1.7;
+}
+
+.parents-cta-button {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 15px 28px;
+
+    background: #ffad00;
+    color: #10102f;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    border: none;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.parents-cta-button:hover {
+    background: #10102f;
+    color: #fff;
+}
+
+/* ==========================================================================
+   4. FOOTER (PIED DE PAGE)
+   ========================================================================== */
+.main-footer {
+    background-color: var(--dark-navy);
+    color: var(--white);
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex; /* Utilisation de flexbox pour un meilleur contrôle de l'alignement */
+    justify-content: space-between; /* Distribue l'espace pour pousser Contact tout à droite */
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 15px; /* Réduit l'espace sous le contenu (anciennement 30px) */
+}
+
+/* 1. Rapprocher le titre/logo du texte en dessous */
+.footer-col h3 {
+    color: var(--accent-orange);
+    margin-bottom: 4px; /* Espace réduit au minimum (anciennement 15px) */
+    font-size: 1.2rem;
+}
+
+.footer-col p {
+    margin-top: 0;
+    line-height: 1.4;
+}
+
+.footer-col h4 {
+    margin-bottom: 8px; /* Espacement resserré des sous-titres */
+    font-size: 0.95rem;
+}
+
+.footer-col ul{ 
+list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 4px; /* Espace resserré entre les liens */
+}
+
+/* 2. Aligner le bloc Contact tout à droite */
+
+
+/* 3. Réduire la hauteur du bandeau de copyright tout en bas */
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 8px 0; /* Padding réduit (anciennement 15px) */
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* ==========================================================================
+   FOOTER COMPLET ET ALIGNÉ
+   ========================================================================== */
+.main-footer {
+    background-color: #1f0d5f;
+    color: var(--white);
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 15px;
+}
+
+/* Colonne Gauche : Logo + description */
+.footer-col:first-child {
+    text-align: left;
+    max-width: 450px;
+}
+
+.footer-col h3 {
+    color: var(--accent-orange);
+    margin-bottom: 4px; /* Rapproche le logo du texte */
+    font-size: 1.2rem;
+}
+
+.footer-col p {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Colonne Droite : Contact */
+
+
+.footer-col:last-child h4 {
+    color: var(--white);
+    font-size: 1rem;
+    margin-bottom: 6px; /* Espace juste au-dessus de l'email */
+}
+
+.footer-col:last-child p {
+    text-align: right;
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-col:last-child i {
+    margin-right: 6px;
+    color: var(--accent-orange);
+}
+
+/* Bandeau de copyright bas */
+.footer-bottom {
+    background-color: #111111;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==========================================================================
+   5. RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 900px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+}

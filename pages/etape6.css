@@ -1,0 +1,876 @@
+/* ==========================================================================
+   1. VARIABLES DE COULEUR & RESET
+   ========================================================================== */
+:root {
+    --dark-navy: #151828;      /* Fond sombre bandeau supérieur & footer */
+    --accent-orange: #ff6b00;   /* Couleur orange d'accentuation */
+    --white: #ffffff;
+    --text-dark: #1f2335;
+    --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* ==========================================================================
+   2. BANDEAU SUPÉRIEUR (RÉSEAUX SOCIAUX)
+   ========================================================================== */
+.top-bar {
+    background-color: var(--dark-navy);
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-links a {
+    color: var(--white);
+    margin-left: 15px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-orange);
+}
+
+/* ==========================================================================
+   3. BARRE DE NAVIGATION
+   ========================================================================== */
+.main-header {
+    background-color: var(--white);
+    padding: 18px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 1000;
+}
+
+.logo-bold {
+    color: #ff6b00;
+}
+
+.logo-orange {
+    color: #111111;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 1rem;
+    font-weight: 800px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+    color: var(--accent-orange);
+    border-bottom: 2px solid var(--accent-orange);
+    padding-bottom: 4px;
+}
+
+/* ==========================================================================
+   4. FOOTER (PIED DE PAGE)
+   ========================================================================== */
+.main-footer {
+    background-color: #1f0d5f;
+    color: var(--white);
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 15px;
+}
+
+.footer-col:first-child {
+    text-align: left;
+    max-width: 450px;
+}
+
+.footer-col h3 {
+    color: var(--accent-orange);
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+}
+
+.footer-col p {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 4px;
+}
+
+.footer-col:last-child h4 {
+    color: var(--white);
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.footer-col:last-child p {
+    text-align: right;
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-col:last-child i {
+    margin-right: 6px;
+    color: var(--accent-orange);
+}
+
+.footer-bottom {
+    background-color: #111111;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==========================================================================
+   5. RESPONSIVE DESIGN (HEADER/FOOTER)
+   ========================================================================== */
+@media (max-width: 900px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
+/* ==================================================
+   STEP PAGE
+   Palette harmonisée sur étape2 :
+   - Titres / fonds sombres : #0B2545
+   - Accent : #F57C00 (orange uni, plus de dégradé)
+   - Texte courant : #444444 / #333333
+================================================== */
+
+.step-page {
+    padding: 4rem  2rem  5rem;
+    background: #f7f8fa;
+}
+
+.step-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+
+/* ==================================================
+   STEP INTRO
+================================================== */
+
+.step-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 2px solid rgba(11, 37, 69, 0.06);
+}
+
+.step-kicker {
+    display: inline-block;
+    background: #F57C00;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    padding: 0.4rem 1.6rem;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.step-intro h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #0B2545;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+.step-intro h1 span {
+    color: #F57C00;
+}
+
+.step-title-line {
+    width: 80px;
+    height: 4px;
+    background: #F57C00;
+    margin: 0.75rem auto 1.5rem;
+    border-radius: 4px;
+}
+
+.step-lead {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #0B2545;
+    max-width: 700px;
+    margin: 0 auto 1.2rem;
+}
+
+.step-intro p:last-of-type {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #333333;
+    font-size: 1.05rem;
+    
+}
+
+
+/* ==================================================
+   STEP MESSAGE
+================================================== */
+
+.step-message {
+    background: #0B2545;
+    color: #ffffff;
+    padding: 3rem 3.5rem;
+    border-radius: 20px;
+    margin-bottom: 4rem;
+    text-align: center;
+    border-left: 5px solid #F57C00;
+}
+
+.step-message h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+}
+
+.step-message h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #F57C00;
+    margin: 1rem auto 0;
+    border-radius: 4px;
+}
+
+.step-message p {
+    color: #e9edf3;
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin: 0 auto 1rem;
+}
+
+.step-message strong {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #F57C00;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* ==================================================
+   CHAPTERS
+================================================== */
+
+.chapters {
+    margin-bottom: 4rem;
+}
+
+.chapters-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0B2545;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.chapters-title::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #F57C00;
+    margin: 0.6rem auto 0;
+    border-radius: 4px;
+}
+
+
+/* ==================================================
+   CHAPTER CARD
+================================================== */
+
+.chapter-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 1.8rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border-left: 5px solid #e5e5e5;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #F57C00;
+}
+
+.chapter-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.07);
+}
+
+
+.chapter-number {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #F57C00;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: rgba(245, 124, 0, 0.08);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    margin-bottom: 0.6rem;
+}
+
+.chapter-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0B2545;
+    margin-bottom: 0.8rem;
+}
+
+.chapter-card p {
+    color: #444444;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.chapter-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.4rem;
+}
+
+.chapter-points span {
+    background: #f7f8fa;
+    color: #0B2545;
+    padding: 0.25rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.chapter-featured .chapter-points span {
+    background: rgba(245, 124, 0, 0.12);
+    color: #F57C00;
+}
+
+
+/* ==================================================
+   COMMON ERRORS
+   (Rouge conservé pour le sens "erreur", mais en aplat,
+   sans dégradé, pour rester cohérent avec le reste)
+================================================== */
+
+.common-errors {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 3rem 3rem 2.5rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.04);
+}
+
+.errors-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0B2545;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.errors-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #c0392b;
+    margin: 0.5rem auto 0;
+    border-radius: 4px;
+}
+
+.errors-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem 2rem;
+}
+
+.error-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 0.8rem 0.5rem;
+    border-bottom: 1px solid #f0f0f8;
+}
+
+.error-item:last-child,
+.error-item:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.error-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    background: #c0392b;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.error-item p {
+    color: #444444;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+
+/* ==================================================
+   STEP CONCLUSION
+================================================== */
+
+.step-conclusion {
+    background: #0B2545;
+    color: #ffffff;
+    padding: 3rem 3.5rem;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    text-align: center;
+    border-left: 5px solid #F57C00;
+}
+
+.conclusion-kicker {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #F57C00;
+    text-transform: uppercase;
+    background: rgba(245, 124, 0, 0.12);
+    padding: 0.3rem 1.4rem;
+    border-radius: 50px;
+    margin-bottom: 0.8rem;
+}
+
+.step-conclusion h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.step-conclusion p {
+    color: #e9edf3;
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin: 0 auto 1.2rem;
+}
+
+.conclusion-line {
+    width: 70px;
+    height: 3px;
+    background: #F57C00;
+    margin: 0 auto 1.2rem;
+    border-radius: 4px;
+}
+
+.step-conclusion strong {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #F57C00;
+    letter-spacing: 0.5px;
+    
+}
+
+
+/* ==================================================
+   GOLDEN RULES
+================================================== */
+
+.golden-rules {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 3rem 3.5rem;
+    margin-bottom: 3.5rem;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.04);
+    border-left: 5px solid #F57C00;
+}
+
+.rules-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0B2545;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.rules-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #F57C00;
+    margin: 0.5rem auto 0;
+    border-radius: 4px;
+}
+
+.rules-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem 2.5rem;
+}
+
+.rules-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.6rem 0;
+    color: #444444;
+    font-size: 0.98rem;
+    border-bottom: 1px solid #f5f5fa;
+}
+
+.rules-list li:nth-last-child(2),
+.rules-list li:last-child {
+    border-bottom: none;
+}
+
+.rule-number {
+    font-weight: 700;
+    color: #F57C00;
+    min-width: 28px;
+    flex-shrink: 0;
+}
+
+
+/* ==================================================
+   STEP NAVIGATION
+================================================== */
+
+.step-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(11, 37, 69, 0.06);
+}
+
+.step-button {
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    letter-spacing: 0.3px;
+}
+
+.step-button.primary {
+    background: #F57C00;
+    color: #FFFFFF;
+    box-shadow: 0 4px 15px rgba(245, 124, 0, 0.25);
+}
+
+.step-button.primary:hover {
+    background: #DF6F00;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(245, 124, 0, 0.35);
+}
+
+.step-button.secondary {
+    background: #FFFFFF;
+    color: #F57C00;
+    border: 2px solid #F57C00;
+}
+
+.step-button.secondary:hover {
+    background: #F57C00;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 992px) {
+
+    .step-intro h1 {
+        font-size: 2.6rem;
+    }
+
+    .step-message {
+        padding: 2.5rem 2rem;
+    }
+
+    .step-message h2 {
+        font-size: 1.6rem;
+    }
+
+    .chapters-title {
+        font-size: 1.8rem;
+    }
+
+    .chapter-card {
+        padding: 1.6rem 1.8rem;
+    }
+
+    .chapter-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .common-errors {
+        padding: 2rem 1.8rem;
+    }
+
+    .errors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .error-item:nth-last-child(2) {
+        border-bottom: 1px solid #f0f0f8;
+    }
+
+    .error-item:last-child {
+        border-bottom: none;
+    }
+
+    .golden-rules {
+        padding: 2rem 1.8rem;
+    }
+
+    .rules-list {
+        grid-template-columns: 1fr;
+    }
+
+    .rules-list li:nth-last-child(2) {
+        border-bottom: 1px solid #f5f5fa;
+    }
+
+    .rules-list li:last-child {
+        border-bottom: none;
+    }
+
+    .step-conclusion {
+        padding: 2.5rem 2rem;
+    }
+
+    .step-conclusion h2 {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1.2rem;
+    }
+
+    .main-nav {
+        justify-content: center;
+        gap: 0.8rem 1.2rem;
+    }
+
+    .main-nav a {
+        font-size: 0.8rem;
+    }
+
+    .step-intro h1 {
+        font-size: 2rem;
+    }
+
+    .step-intro p {
+        font-size: 0.95rem;
+    }
+
+    .step-lead {
+        font-size: 1.1rem;
+    }
+
+    .step-message {
+        padding: 1.8rem 1.2rem;
+    }
+
+    .step-message h2 {
+        font-size: 1.3rem;
+    }
+
+    .step-message strong {
+        font-size: 1rem;
+    }
+
+    .chapter-card {
+        padding: 1.2rem 1.2rem;
+    }
+
+    .chapter-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .chapter-points span {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.8rem;
+    }
+
+    .step-conclusion {
+        padding: 2rem 1.2rem;
+    }
+
+    .step-conclusion h2 {
+        font-size: 1.3rem;
+    }
+
+    .step-conclusion strong {
+        font-size: 1rem;
+    }
+
+    .common-errors {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .errors-title {
+        font-size: 1.5rem;
+    }
+
+    .golden-rules {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .rules-title {
+        font-size: 1.5rem;
+    }
+
+    .step-navigation {
+        gap: 0.8rem;
+    }
+
+    .step-button {
+        padding: 0.6rem 1.4rem;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .step-intro h1 {
+        font-size: 1.7rem;
+    }
+
+    .step-kicker {
+        font-size: 0.65rem;
+        padding: 0.3rem 1.2rem;
+    }
+
+    .main-nav {
+        gap: 0.5rem 0.8rem;
+    }
+
+    .main-nav a {
+        font-size: 0.7rem;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .step-container {
+        padding: 0 1rem;
+    }
+
+    .chapter-points {
+        gap: 0.4rem;
+    }
+
+    .chapter-points span {
+        font-size: 0.65rem;
+        padding: 0.15rem 0.6rem;
+    }
+
+    .step-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+    }
+
+}

@@ -1,0 +1,903 @@
+/* ==========================================================
+   FAIRE LE POINT SUR MA SITUATION
+========================================================== */
+
+:root {
+    --navy: #11102f;
+    --navy-light: #1c1a42;
+    --orange: #f57C00;
+
+    --text: #17172b;
+    --text-light: #55566b;
+
+    --background: #f5f6f9;
+    --white: #ffffff;
+    --border: #e4e5ec;
+
+    --shadow: 0 8px 25px rgba(17, 16, 47, 0.06);
+}
+
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ==========================================================
+   NAVIGATION
+========================================================== */
+
+.site-header {
+    background: var(--navy);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+.nav-container {
+    width: min(1120px, 92%);
+
+    min-height: 70px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+/* ==========================================================================
+   1. VARIABLES DE COULEUR & RESET
+   ========================================================================== */
+:root {
+    --dark-navy: #151828;      /* Fond sombre bandeau supérieur & footer */
+    --accent-orange: #ff6b00;   /* Couleur orange d'accentuation */
+    --white: #ffffff;
+    --text-dark: #1f2335;
+    --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main-content {
+    flex: 1; /* Pousse le footer vers le bas */
+}
+
+/* ==========================================================================
+   2. BANDEAU SUPÉRIEUR (RÉSEAUX SOCIAUX)
+   ========================================================================== */
+.top-bar {
+    background-color: var(--dark-navy);
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(109, 33, 33, 0.08);
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-links a {
+    color: var(--white);
+    margin-left: 15px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-orange);
+}
+
+/* ==========================================================================
+   3. BARRE DE NAVIGATION
+   ========================================================================== */
+.main-header {
+    background-color: var(--white);
+    padding: 18px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 1000;
+}
+
+.logo-bold {
+    color: #ff6b00;
+}
+
+.logo-orange {
+    color: #111111;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 1rem;
+    font-weight: 800px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+    color: var(--accent-orange);
+    border-bottom: 2px solid var(--accent-orange);
+    padding-bottom: 4px;
+}
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.point-container {
+    width: min(1050px, 92%);
+
+    margin: 0 auto;
+}
+
+
+/* ==========================================================
+   INTRODUCTION
+========================================================== */
+
+.point-intro {
+    padding: 85px 0 70px;
+
+    text-align: center;
+}
+
+
+.section-label {
+    display: inline-block;
+
+    padding: 5px 13px;
+
+    background: rgba(255, 174, 0, 0.10);
+
+    color: var(--orange);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+
+    margin-bottom: 22px;
+}
+
+
+.point-intro h1 {
+    font-size: clamp(34px, 5vw, 52px);
+
+    line-height: 1.15;
+
+    font-weight: 800;
+}
+
+
+.point-intro h1 span {
+    color: var(--orange);
+}
+
+
+.title-line {
+    width: 38px;
+    height: 3px;
+
+    background: var(--orange);
+
+    margin: 22px auto 25px;
+}
+
+
+.intro-text {
+    max-width: 720px;
+
+    margin: 0 auto 12px;
+
+    color: var(--text-light);
+
+    font-size: 15px;
+}
+
+
+.intro-note {
+    max-width: 680px;
+
+    margin: 25px auto 0;
+
+    padding: 15px 20px;
+
+    background: var(--white);
+
+    border-left: 3px solid var(--orange);
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    box-shadow: var(--shadow);
+}
+
+
+/* ==========================================================
+   FORMULAIRE
+========================================================== */
+
+.point-form-section {
+    padding: 20px 0 80px;
+}
+
+
+.situation-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+.form-block {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+    border-left: 3px solid var(--orange);
+}
+
+
+.form-heading {
+    margin-bottom: 28px;
+}
+
+
+.section-number {
+    display: block;
+
+    color: var(--orange);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+}
+
+
+.form-heading h2 {
+    font-size: clamp(25px, 4vw, 32px);
+
+    line-height: 1.25;
+
+    margin-bottom: 7px;
+}
+
+
+.form-heading p {
+    color: var(--text-light);
+
+    font-size: 14px;
+}
+
+
+/* ==========================================================
+   CHAMPS
+========================================================== */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.form-group label {
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    border: 1px solid var(--border);
+
+    background: #fafafd;
+
+    color: var(--text);
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    padding: 13px 14px;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 190px;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--orange);
+
+    background: var(--white);
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9a9aaa;
+}
+
+
+/* ==========================================================
+   CHOIX
+========================================================== */
+
+.choice-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+
+.choice-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 17px 18px;
+
+    background: #fafafd;
+
+    border: 1px solid var(--border);
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.choice-card:hover {
+    border-color: var(--orange);
+
+    background: #fffdf8;
+}
+
+
+.choice-card input {
+    margin-top: 4px;
+
+    accent-color: var(--orange);
+}
+
+
+.choice-card span {
+    color: var(--text-light);
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================================
+   APRÈS
+========================================================== */
+
+.after-block {
+    background: var(--navy);
+
+    color: var(--white);
+
+    padding: 50px 45px;
+
+    border-radius: 10px;
+    border-left: 5px solid #F57C00;
+}
+
+
+.after-block h2 {
+    font-size: clamp(27px, 4vw, 36px);
+
+    line-height: 1.25;
+
+    margin-bottom: 35px;
+}
+
+
+.after-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+
+.after-card {
+    background: var(--navy-light);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    padding: 23px 20px;
+
+    border-radius: 7px;
+    border-left: 5px solid #F57C00;
+}
+
+
+.after-card > span {
+    color: var(--orange);
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+
+.after-card h3 {
+    font-size: 17px;
+
+    margin: 9px 0;
+}
+
+
+.after-card p {
+    color: #d7d6e3;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================================
+   ENVOI
+========================================================== */
+
+.form-submit {
+    text-align: center;
+
+    padding: 25px 15px 10px;
+}
+
+
+.form-submit p {
+    max-width: 650px;
+
+    margin: 0 auto 22px;
+
+    color: var(--text-light);
+
+    font-size: 13px;
+}
+
+
+.submit-button {
+    border: none;
+
+    background: var(--orange);
+
+    color: var(--navy);
+
+    padding: 14px 28px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.submit-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================================
+   ESPACE PARENTS
+========================================================== */
+
+.parents-section {
+    padding: 10px 0 80px;
+}
+
+
+.parents-box {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+    border-left: 3px solid var(--orange);
+    
+}
+
+
+.parents-box h2 {
+    font-size: 23px;
+
+    margin-bottom: 8px;
+}
+
+
+.parents-box p {
+    color: var(--text-light);
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+.parents-button {
+    display: inline-block;
+
+    border: 1px solid var(--navy);
+
+    color: var(--navy);
+
+    padding: 10px 22px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    border-radius: 5px;
+}
+
+
+.parents-button:hover {
+    background: #111111;
+
+    color: #111111;
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.site-footer {
+    background: var(--navy);
+
+    color: #c8c7d5;
+
+    text-align: center;
+
+    padding: 25px 15px;
+
+    font-size: 12px;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 800px) {
+
+    .nav-container {
+        flex-direction: column;
+
+        padding: 18px 0;
+    }
+
+
+    .main-nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px 17px;
+    }
+
+
+    .main-nav a {
+        font-size: 11px;
+    }
+
+
+    .form-grid,
+    .choice-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .after-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .form-block {
+        padding: 30px;
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 500px) {
+
+    .point-intro {
+        padding: 60px 0 50px;
+    }
+
+
+    .point-form-section {
+        padding-bottom: 55px;
+    }
+
+
+    .form-block {
+        padding: 25px 20px;
+    }
+
+
+    .after-block {
+        padding: 38px 22px;
+    }
+
+
+    .after-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .parents-box {
+        padding: 30px 20px;
+    }
+
+}
+
+/* ==========================================================================
+   4. FOOTER (PIED DE PAGE)
+   ========================================================================== */
+.main-footer {
+    background-color: var(--dark-navy);
+    color: var(--white);
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex; /* Utilisation de flexbox pour un meilleur contrôle de l'alignement */
+    justify-content: space-between; /* Distribue l'espace pour pousser Contact tout à droite */
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 15px; /* Réduit l'espace sous le contenu (anciennement 30px) */
+}
+
+/* 1. Rapprocher le titre/logo du texte en dessous */
+.footer-col h3 {
+    color: var(--accent-orange);
+    margin-bottom: 4px; /* Espace réduit au minimum (anciennement 15px) */
+    font-size: 1.2rem;
+}
+
+.footer-col p {
+    margin-top: 0;
+    line-height: 1.4;
+}
+
+.footer-col h4 {
+    margin-bottom: 8px; /* Espacement resserré des sous-titres */
+    font-size: 0.95rem;
+}
+
+.footer-col ul{ 
+list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 4px; /* Espace resserré entre les liens */
+}
+
+/* 2. Aligner le bloc Contact tout à droite */
+
+
+/* 3. Réduire la hauteur du bandeau de copyright tout en bas */
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 8px 0; /* Padding réduit (anciennement 15px) */
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* ==========================================================================
+   FOOTER COMPLET ET ALIGNÉ
+   ========================================================================== */
+.main-footer {
+    background-color: #1f0d5f;
+    color: var(--white);
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 15px;
+}
+
+/* Colonne Gauche : Logo + description */
+.footer-col:first-child {
+    text-align: left;
+    max-width: 450px;
+}
+
+.footer-col h3 {
+    color: var(--accent-orange);
+    margin-bottom: 4px; /* Rapproche le logo du texte */
+    font-size: 1.2rem;
+}
+
+.footer-col p {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Colonne Droite : Contact */
+
+
+.footer-col:last-child h4 {
+    color: var(--white);
+    font-size: 1rem;
+    margin-bottom: 6px; /* Espace juste au-dessus de l'email */
+}
+
+.footer-col:last-child p {
+    text-align: right;
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-col:last-child i {
+    margin-right: 6px;
+    color: var(--accent-orange);
+}
+
+/* Bandeau de copyright bas */
+.footer-bottom {
+    background-color: #111111;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==========================================================================
+   5. RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 900px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+}

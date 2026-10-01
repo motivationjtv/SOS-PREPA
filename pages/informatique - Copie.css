@@ -1,0 +1,587 @@
+/* =========================================
+   DOMAINE INFORMATIQUE & NUMÉRIQUE
+   ========================================= */
+
+:root {
+    --white: #ffffff;
+    --dark-navy: #172033;
+    --accent-orange: #f28c28;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f7f8fa;
+    color: #172033;
+    line-height: 1.6;
+}
+
+/* =========================================
+   BARRE DES RÉSEAUX SOCIAUX
+   ========================================= */
+
+.top-bar {
+    background-color: #151828;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+}
+
+.top-bar-content {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #ff6b00;
+}
+
+/* Suppression d'un éventuel tiret automatique */
+.social-links a::after {
+    content: none !important;
+}
+
+/* =========================================
+   EN-TÊTE
+   ========================================= */
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main-header {
+    background-color: var(--white);
+    padding: 18px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 36px;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 1000;
+}
+
+.logo-bold {
+    color: #ff6b00;
+}
+
+.logo-orange {
+    color: #111111;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+    color: var(--accent-orange);
+    border-bottom: 2px solid var(--accent-orange);
+    padding-bottom: 4px;
+}
+
+/* =========================================
+   INTRODUCTION DU DOMAINE
+   ========================================= */
+
+.domain-intro {
+    background: #172033;
+    color: white;
+    text-align: center;
+    padding: 70px 25px 65px;
+}
+
+.domain-number {
+    display: inline-block;
+    background: #f28c28;
+    padding: 7px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.domain-intro h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.domain-intro h1 span {
+    color: #f28c28;
+}
+
+.intro-lead {
+    max-width: 800px;
+    margin: auto;
+    color: #e5e7eb;
+    font-size: 19px;
+}
+
+
+/* =========================================
+   SECTIONS D'INFORMATION
+   ========================================= */
+
+.info-section {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 55px 25px;
+}
+
+.info-section h2 {
+    font-size: 25px;
+    margin-bottom: 22px;
+    color: #172033;
+}
+
+.info-section h2 i {
+    color: #f28c28;
+    margin-right: 8px;
+}
+
+.info-section p {
+    color: #4b5563;
+    margin-bottom: 16px;
+}
+
+
+/* =========================================
+   BLOCS IMPORTANTS
+   ========================================= */
+
+.important-box {
+    margin-top: 25px;
+    padding: 25px 28px;
+    background: #fff4e5;
+    border-left: 5px solid #f28c28;
+    border-radius: 8px;
+}
+
+.important-box strong {
+    display: block;
+    color: #172033;
+    margin-bottom: 8px;
+}
+
+.important-box p {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   ACTIONS DE L'INGÉNIEUR
+   ========================================= */
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.action-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 22px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.action-card i {
+    color: #f28c28;
+    font-size: 25px;
+}
+
+.action-card span {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   QUESTION CENTRALE
+   ========================================= */
+
+.question-box {
+    margin-top: 30px;
+    padding: 28px;
+    background: #172033;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.question-box p {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.question-box p:first-child {
+    color: #f28c28;
+}
+
+
+/* =========================================
+   PROBLÈMES
+   ========================================= */
+
+.problem-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 30px;
+    margin-top: 25px;
+}
+
+.problem-list div {
+    background: white;
+    border: 1px solid #e5e7eb;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.problem-list i {
+    color: #f28c28;
+    margin-right: 8px;
+}
+
+
+/* =========================================
+   SYSTÈMES
+   ========================================= */
+
+.systems-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.systems-grid div {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   SECTEURS
+   ========================================= */
+
+.sectors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.sectors span {
+    background: #172033;
+    color: white;
+    padding: 9px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   SPÉCIALITÉS
+   ========================================= */
+
+.specialties {
+    background: #eef1f5;
+    padding: 70px 25px 80px;
+}
+
+.section-title {
+    max-width: 850px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.small-title {
+    color: #f28c28;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    color: #172033;
+    margin-bottom: 12px;
+}
+
+.section-title p {
+    color: #5b6472;
+}
+
+
+/* =========================================
+   CARTES DES 12 SPÉCIALITÉS
+   ========================================= */
+
+.specialties-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.specialty-card {
+    position: relative;
+    background: white;
+    border: 1px solid #e1e5ea;
+    border-radius: 12px;
+    padding: 28px 24px;
+    min-height: 255px;
+    text-decoration: none;
+    color: #172033;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.specialty-card:hover {
+    transform: translateY(-5px);
+    border-color: #f28c28;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+.specialty-number {
+    color: #f28c28;
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.specialty-card h3 {
+    font-size: 17px;
+    line-height: 1.35;
+    margin-bottom: 12px;
+}
+
+.specialty-card p {
+    color: #5b6472;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.specialty-card span {
+    margin-top: auto;
+    color: #f28c28;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.specialty-card span i {
+    margin-left: 5px;
+    transition: transform 0.2s ease;
+}
+
+.specialty-card:hover span i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   SPÉCIALITÉ COMPLÉMENTAIRE (BI)
+   ========================================= */
+
+.complementary-title {
+    max-width: 1200px;
+    margin: 45px auto 22px;
+    text-align: center;
+}
+
+.complementary-title p {
+    display: inline-block;
+    color: #9a7a55;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    border-bottom: 2px dashed #f28c28;
+}
+
+.specialties-grid--single {
+    grid-template-columns: minmax(0, 420px);
+    justify-content: center;
+}
+
+.specialty-card--complementary {
+    border-style: dashed;
+    border-color: #f2c896;
+    background: #fffaf3;
+}
+
+.specialty-card--complementary:hover {
+    border-style: solid;
+    border-color: #f28c28;
+}
+
+.specialty-number--badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    background: #f28c28;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   RETOUR
+   ========================================= */
+
+
+
+
+
+.back-link { text-align: center; margin: 40px 0; }
+.back-link a { display: inline-block; background: var(--dark-navy); color: #fff; padding: 12px 28px; border-radius: 30px; font-weight: 500; }
+.back-link a:hover { background: var(--accent-orange); }
+
+/* =========================================
+   PIED DE PAGE
+   ========================================= */
+
+footer {
+    background: #111827;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+
+    .specialties-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .systems-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .domain-intro h1 {
+        font-size: 32px;
+    }
+
+    .actions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .problem-list {
+        grid-template-columns: 1fr;
+    }
+
+    .specialties-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .systems-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .actions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .systems-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .domain-intro h1 {
+        font-size: 28px;
+    }
+
+    .info-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Traitement du signal | SOS PREPA</title>
+
+    <!-- CSS de la page -->
+    <link rel="stylesheet" href="traitement-signal.css">
+
+    <!-- Police et icônes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- BARRE DES RÉSEAUX SOCIAUX -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="social-links">
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BARRE DE NAVIGATION -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-bold">SOS</span>
+                <span class="logo-orange">PREPA MATHS</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../guide.html">Le guide</a></li>
+                    <li><a href="../7-etapes.html">Les 7 étapes</a></li>
+                    <li><a href="../pourquoi-coach.html">Pourquoi Coach-Prof de Maths</a></li>
+                    <li><a href="../faq.html">Vos interrogations</a></li>
+                    <li><a href="../mathematiques.html">Mathématiques</a></li>
+                    <li><a href="../videos.html">Vidéos</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- INTRODUCTION -->
+    <section class="hero-specialite">
+        <div class="hero-content">
+            <p class="breadcrumb">Électronique → Spécialités</p>
+            <h1>TRAITEMENT DU SIGNAL</h1>
+            <p class="hero-text">
+                Cette spécialité extrait l'information utile d'un son, d'une
+                image, d'un signal radar ou d'une mesure médicale — en
+                s'appuyant fortement sur les mathématiques appliquées.
+            </p>
+        </div>
+    </section>
+
+
+    <main class="specialite-container">
+
+        <!-- COMPRENDRE LA SPÉCIALITÉ -->
+        <section class="info-section">
+            <h2>Qu'est-ce que le traitement du signal ?</h2>
+
+            <p>
+                Un signal (sonore, électrique, radar, médical) contient une
+                information, mais elle est souvent noyée dans du bruit ou
+                mélangée à d'autres informations. Le traitement du signal
+                cherche à en extraire ce qui est utile.
+            </p>
+
+            <p>
+                L'ingénieur développe des méthodes pour filtrer le bruit,
+                analyser un signal en fréquence, détecter un événement ou
+                reconnaître une information. Il programme surtout des
+                algorithmes, à partir de données déjà acquises par une
+                chaîne de mesure.
+            </p>
+
+            <p>
+                Cette spécialité est proche de l'intelligence artificielle et
+                des données (Domaine 1), notamment pour le traitement d'images
+                et la vision par ordinateur. Ici, les signaux traités restent
+                d'origine physique : son, radar, mesure médicale.
+            </p>
+        </section>
+
+
+        <!-- QUE FAIT-ON ? -->
+        <section class="info-section">
+            <h2>Que fait-on réellement en traitement du signal ?</h2>
+
+            <div class="activity-grid">
+
+                <div class="activity-card">
+                    <i class="fa-solid fa-filter"></i>
+                    <h3>Filtrer</h3>
+                    <p>Réduire le bruit qui recouvre l'information utile d'un signal.</p>
+                </div>
+
+                <div class="activity-card">
+                    <i class="fa-solid fa-wave-square"></i>
+                    <h3>Analyser en fréquence</h3>
+                    <p>Décomposer un signal pour comprendre les fréquences qui le composent.</p>
+                </div>
+
+                <div class="activity-card">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h3>Détecter</h3>
+                    <p>Repérer un événement précis dans un signal : une anomalie, un obstacle, une onde.</p>
+                </div>
+
+                <div class="activity-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Programmer</h3>
+                    <p>Développer les algorithmes qui réalisent ces traitements.</p>
+                </div>
+
+                <div class="activity-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Extraire des caractéristiques</h3>
+                    <p>Isoler dans un signal les éléments qui portent une information utile.</p>
+                </div>
+
+                <div class="activity-card">
+                    <i class="fa-solid fa-flask"></i>
+                    <h3>Expérimenter</h3>
+                    <p>Tester une méthode sur des signaux réels et l'ajuster selon les résultats.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SUR QUOI TRAVAILLE-T-ON ? -->
+        <section class="info-section">
+            <h2>Sur quoi travaille-t-on ?</h2>
+
+            <div class="systems-grid">
+                <div class="system-item"><i class="fa-solid fa-microphone"></i><span>Signaux audio</span></div>
+                <div class="system-item"><i class="fa-solid fa-image"></i><span>Images</span></div>
+                <div class="system-item"><i class="fa-solid fa-satellite-dish"></i><span>Signaux radar</span></div>
+                <div class="system-item"><i class="fa-solid fa-heart-pulse"></i><span>Signaux biomédicaux</span></div>
+                <div class="system-item"><i class="fa-solid fa-gauge-high"></i><span>Données de capteurs</span></div>
+                <div class="system-item"><i class="fa-solid fa-square-root-variable"></i><span>Algorithmes de traitement</span></div>
+            </div>
+        </section>
+
+
+        <!-- MÉTIERS -->
+        <section class="info-section">
+            <h2>Les principaux métiers</h2>
+
+            <p class="section-intro">
+                Le traitement du signal ne correspond pas à un seul métier.
+                Selon ce que vous aimez faire — analyser, mesurer, vérifier ou
+                explorer de nouvelles méthodes — plusieurs profils
+                professionnels sont possibles.
+            </p>
+
+            <div class="metiers-grid">
+
+                <a href="#empreinte-signal" class="metier-card">
+                    <div class="metier-icon"><i class="fa-solid fa-wave-square"></i></div>
+                    <div>
+                        <h3>Ingénieur traitement du signal</h3>
+                        <p>
+                            Filtre le bruit, analyse en fréquence, détecte ou
+                            reconnaît une information dans un signal. Programme
+                            surtout des algorithmes.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#empreinte-instrumentation" class="metier-card">
+                    <div class="metier-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                    <div>
+                        <h3>Ingénieur instrumentation et capteurs</h3>
+                        <p>
+                            Conçoit la chaîne de mesure qui produit le signal à
+                            traiter. Ce métier rejoint aussi la spécialité 01.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#empreinte-test" class="metier-card">
+                    <div class="metier-icon"><i class="fa-solid fa-vial"></i></div>
+                    <div>
+                        <h3>Ingénieur test et validation</h3>
+                        <p>
+                            Vérifie qu'une méthode de traitement fonctionne de
+                            façon fiable sur des signaux réels, pas seulement
+                            en théorie.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#empreinte-rd" class="metier-card">
+                    <div class="metier-icon"><i class="fa-solid fa-flask"></i></div>
+                    <div>
+                        <h3>Ingénieur R&amp;D en traitement du signal</h3>
+                        <p>
+                            Explore de nouvelles méthodes d'analyse, sur des
+                            problèmes qui n'ont pas encore de solution évidente.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#empreinte-architecte" class="metier-card">
+                    <div class="metier-icon"><i class="fa-solid fa-sitemap"></i></div>
+                    <div>
+                        <h3>Architecte systèmes électroniques</h3>
+                        <p>
+                            Définit comment la chaîne d'acquisition et de
+                            traitement du signal s'intègre dans un système complet.
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- EMPREINTES PROFESSIONNELLES -->
+        <section class="profil-section">
+
+            <h2>Des métiers différents pour des profils différents</h2>
+
+            <p>
+                Ces métiers appartiennent tous au traitement du signal, mais
+                ils ne demandent pas exactement les mêmes façons de travailler.
+                Voici, pour chacun, son <strong>empreinte professionnelle</strong> :
+                la nature du travail, les types de problèmes traités, l'objet
+                sur lequel il porte, et la manière dont il s'exerce au quotidien.
+            </p>
+
+            <div class="profil-grid">
+
+                <!-- TRAITEMENT DU SIGNAL -->
+                <article class="empreinte-card" id="empreinte-signal">
+                    <h3>Ingénieur traitement du signal</h3>
+
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Nature du travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Analyser</span>
+                            <span class="empreinte-tag">Programmer</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Types de problèmes</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Scientifique</span>
+                            <span class="empreinte-tag">Informatique</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Objet du travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Données</span>
+                            <span class="empreinte-tag">Signaux</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Mode de travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Individuel ou équipe</span>
+                            <span class="empreinte-tag">Bureau</span>
+                            <span class="empreinte-tag">Projet ou recherche</span>
+                            <span class="empreinte-tag">Problèmes ouverts</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- INSTRUMENTATION -->
+                <article class="empreinte-card" id="empreinte-instrumentation">
+                    <h3>Ingénieur instrumentation et capteurs</h3>
+
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Nature du travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Concevoir</span>
+                            <span class="empreinte-tag">Expérimenter</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Types de problèmes</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Technique</span>
+                            <span class="empreinte-tag">Scientifique</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Objet du travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Système</span>
+                            <span class="empreinte-tag">Chaîne de mesure</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Mode de travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Équipe</span>
+                            <span class="empreinte-tag">Laboratoire et terrain</span>
+                            <span class="empreinte-tag">Projet et exploitation</span>
+                            <span class="empreinte-tag">Problèmes structurés</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TEST -->
+                <article class="empreinte-card" id="empreinte-test">
+                    <h3>Ingénieur test et validation</h3>
+
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Nature du travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Expérimenter</span>
+                            <span class="empreinte-tag">Analyser</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Types de problèmes</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Technique</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Objet du travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Produit</span>
+                            <span class="empreinte-tag">Système existant</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Mode de travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Équipe</span>
+                            <span class="empreinte-tag">Laboratoire</span>
+                            <span class="empreinte-tag">Projet</span>
+                            <span class="empreinte-tag">Problèmes ouverts</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- R&D -->
+                <article class="empreinte-card" id="empreinte-rd">
+                    <h3>Ingénieur R&amp;D en traitement du signal</h3>
+
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Nature du travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Rechercher</span>
+                            <span class="empreinte-tag">Expérimenter</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Types de problèmes</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Innovation et recherche</span>
+                            <span class="empreinte-tag">Scientifique</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Objet du travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Méthode d'analyse</span>
+                            <span class="empreinte-tag">Algorithme</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Mode de travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Équipe</span>
+                            <span class="empreinte-tag">Laboratoire</span>
+                            <span class="empreinte-tag">Recherche</span>
+                            <span class="empreinte-tag">Problèmes ouverts</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ARCHITECTE -->
+                <article class="empreinte-card" id="empreinte-architecte">
+                    <h3>Architecte systèmes électroniques</h3>
+
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Nature du travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Concevoir</span>
+                            <span class="empreinte-tag">Analyser</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Types de problèmes</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Technique</span>
+                            <span class="empreinte-tag">Organisation</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Objet du travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Système complexe</span>
+                            <span class="empreinte-tag">Architecture globale</span>
+                        </div>
+                    </div>
+                    <div class="empreinte-dimension">
+                        <span class="empreinte-label">Mode de travail</span>
+                        <div class="empreinte-tags">
+                            <span class="empreinte-tag">Équipe</span>
+                            <span class="empreinte-tag">Bureau</span>
+                            <span class="empreinte-tag">Projet</span>
+                            <span class="empreinte-tag">Problèmes ouverts</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- RETOUR -->
+        <div class="navigation-bottom">
+            <a href="electronique.html" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i>
+                Retour aux spécialités de l'électronique
+            </a>
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>© SOS PREPA — Construire son avenir après la prépa</p>
+    </footer>
+
+
+    <!-- =====================================================
+         DONNÉES STRUCTURÉES — EMPREINTES PROFESSIONNELLES
+         Utilisées plus tard par le questionnaire de confrontation
+         étudiant ↔ métiers. Non affichées à l'étudiant.
+    ===================================================== -->
+    <script type="application/json" id="empreintes-traitement-signal">
+    {
+        "domaine": "Électronique",
+        "specialite": "Traitement du signal",
+        "metiers": [
+            {
+                "id": "traitement-signal",
+                "nom": "Ingénieur traitement du signal",
+                "nature_du_travail": ["analyser", "programmer"],
+                "types_de_problemes": ["scientifique", "informatique"],
+                "objet_du_travail": ["données", "signaux"],
+                "mode_de_travail": ["individuel ou équipe", "bureau", "projet ou recherche", "problèmes ouverts"]
+            },
+            {
+                "id": "instrumentation-capteurs",
+                "nom": "Ingénieur instrumentation et capteurs",
+                "nature_du_travail": ["concevoir", "expérimenter"],
+                "types_de_problemes": ["technique", "scientifique"],
+                "objet_du_travail": ["système", "chaîne de mesure"],
+                "mode_de_travail": ["équipe", "laboratoire et terrain", "projet et exploitation", "problèmes structurés"]
+            },
+            {
+                "id": "test-validation",
+                "nom": "Ingénieur test et validation",
+                "nature_du_travail": ["expérimenter", "analyser"],
+                "types_de_problemes": ["technique"],
+                "objet_du_travail": ["produit", "système existant"],
+                "mode_de_travail": ["équipe", "laboratoire", "projet", "problèmes ouverts"]
+            },
+            {
+                "id": "rd-traitement-signal",
+                "nom": "Ingénieur R&D en traitement du signal",
+                "nature_du_travail": ["rechercher", "expérimenter"],
+                "types_de_problemes": ["innovation et recherche", "scientifique"],
+                "objet_du_travail": ["méthode d'analyse", "algorithme"],
+                "mode_de_travail": ["équipe", "laboratoire", "recherche", "problèmes ouverts"]
+            },
+            {
+                "id": "architecte-systemes",
+                "nom": "Architecte systèmes électroniques",
+                "nature_du_travail": ["concevoir", "analyser"],
+                "types_de_problemes": ["technique", "organisation"],
+                "objet_du_travail": ["système complexe", "architecture globale"],
+                "mode_de_travail": ["équipe", "bureau", "projet", "problèmes ouverts"]
+            }
+        ]
+    }
+    </script>
+
+</body>
+</html>

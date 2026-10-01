@@ -1,0 +1,414 @@
+
+/* =========================================
+   ÉTAPE 7 — APRÈS LA PRÉPA
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f7f8fa;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   EN-TÊTE
+   ========================================= */
+
+/* =========================================
+   BARRE DES RÉSEAUX SOCIAUX
+   ========================================= */
+
+/* =========================================
+   BARRE DES RÉSEAUX SOCIAUX
+   ========================================= */
+
+.top-bar {
+    background-color: #151828;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+}
+
+.top-bar-content {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #ff6b00;
+}
+
+/* Suppression d'un éventuel tiret automatique */
+.social-links a::after {
+    content: none !important;
+}
+
+
+/* =========================================
+   EN-TÊTE PRINCIPAL
+   ========================================= */
+
+.main-header {
+    background-color: #ffffff;
+    padding: 18px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 36px;
+    z-index: 1000;
+}
+
+.header-container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 1000;
+}
+
+.logo-bold {
+    color: #ff6b00;
+}
+
+.logo-orange {
+    color: #111111;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+    color: #ff6b00;
+    border-bottom: 2px solid #ff6b00;
+    padding-bottom: 4px;
+}
+
+@media (max-width: 900px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
+/* =========================================
+   INTRODUCTION
+   ========================================= */
+
+.intro {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 25px 45px;
+    text-align: center;
+}
+
+.etape-number {
+    display: inline-block;
+    background: #f28c28;
+    color: white;
+    padding: 7px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+    color: #172033;
+}
+
+.intro h1 span {
+    color: #f28c28;
+    display: block;
+}
+
+.intro p {
+    max-width: 850px;
+    margin: 10px auto;
+    font-size: 16px;
+    color: #4b5563;
+}
+
+.intro-text {
+    font-size: 19px !important;
+    color: #172033 !important;
+}
+
+
+/* =========================================
+   SECTION ORIENTATION
+   ========================================= */
+
+.orientation {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 35px 25px 70px;
+}
+
+.orientation h2 {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 12px;
+    color: #172033;
+}
+
+.orientation h2 i {
+    color: #f28c28;
+    margin-right: 8px;
+}
+
+.section-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #5b6472;
+}
+
+
+/* =========================================
+   LES 12 CARTES DOMAINES
+   ========================================= */
+
+.domains {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.domain-card {
+    min-height: 230px;
+    padding: 28px 20px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #172033;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.domain-card:hover {
+    transform: translateY(-5px);
+    border-color: #f28c28;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+.domain-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #fff1df;
+    color: #f28c28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.domain-card h3 {
+    font-size: 17px;
+    line-height: 1.35;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.domain-card span {
+    margin-top: 18px;
+    color: #f28c28;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.domain-card span i {
+    margin-left: 5px;
+    transition: transform 0.2s ease;
+}
+
+.domain-card:hover span i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   AIDE — QUESTIONNAIRE
+   ========================================= */
+
+.orientation-help {
+    max-width: 950px;
+    margin: 10px auto 80px;
+    padding: 45px 35px;
+    background: #172033;
+    color: white;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.help-icon {
+    font-size: 38px;
+    color: #f28c28;
+    margin-bottom: 15px;
+}
+
+.orientation-help h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.orientation-help p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    color: #d7dce5;
+}
+
+.questionnaire-button {
+    display: inline-block;
+    background: #f28c28;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.questionnaire-button:hover {
+    background: #920792;
+    transform: translateY(-2px);
+}
+
+
+
+/* =========================================
+   PIED DE PAGE
+   ========================================= */
+
+footer {
+    background: #111827;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .domains {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .domains {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .orientation-help {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .domains {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation {
+        gap: 12px;
+    }
+
+    .navigation a {
+        font-size: 12px;
+    }
+
+    .intro {
+        padding-top: 45px;
+    }
+}
+

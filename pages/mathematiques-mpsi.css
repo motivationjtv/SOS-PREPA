@@ -1,0 +1,615 @@
+/* ==========================================================
+   PAGE MATHÉMATIQUES — PROGRAMME MPSI
+   ========================================================== */
+
+/* ==========================================================
+   TOP BAR
+   ========================================================== */
+
+.top-bar {
+    background: #19182f;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.top-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+}
+
+.social-icons a:hover {
+    opacity: 1;
+    color: #F57C00;
+}
+
+/* ==========================================================
+   NAVIGATION PRINCIPALE - STYLE SOS PREPA
+   ========================================================== */
+
+.navbar {
+    background: #19182f;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #F57C00;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+/* LOGO */
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo-orange {
+    color: #F57C00;
+}
+
+.logo-black {
+    color: #ffffff;
+}
+
+/* MENU NAVIGATION */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav-menu li a:hover {
+    background: rgba(245, 124, 0, 0.15);
+    color: #F57C00;
+}
+
+/* Lien actif "MATHÉMATIQUES" */
+.nav-menu li a.math-active {
+    background: #F57C00;
+    color: #ffffff;
+}
+
+.nav-menu li a.math-active:hover {
+    background: #e06b00;
+}
+
+/* Indicateur de page active */
+.nav-menu li a.math-active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 3px;
+    background: #F57C00;
+    border-radius: 2px;
+}
+
+/* ==========================================================
+   CONTENEUR GÉNÉRAL
+   ========================================================== */
+
+.mpsi-page {
+    width: 100%;
+    background: #f4f4fb;
+}
+
+/* ==========================================================
+   HERO MPSI
+   ========================================================== */
+
+.mpsi-hero {
+    background: #19182f;
+    color: #ffffff;
+    padding: 75px 20px 80px;
+    text-align: center;
+}
+
+.mpsi-hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mpsi-kicker {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #F57C00;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.mpsi-hero h1 {
+    margin: 0 0 22px;
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+.mpsi-hero h1 span {
+    color: #F57C00;
+}
+
+.mpsi-hero p {
+    max-width: 720px;
+    margin: 8px auto;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.mpsi-hero strong {
+    color: #F57C00;
+    font-weight: 600;
+}
+
+/* ==========================================================
+   SECTIONS PROGRAMME
+   ========================================================== */
+
+.mpsi-program {
+    padding: 75px 20px 85px;
+}
+
+.mpsi-section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.mpsi-section-heading > span {
+    display: block;
+    margin-bottom: 10px;
+    color: #F57C00;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.mpsi-section-heading h2 {
+    margin: 0;
+    color: #171717;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.mpsi-heading-line {
+    width: 42px;
+    height: 3px;
+    margin: 18px auto 0;
+    background: #F57C00;
+}
+
+/* ==========================================================
+   GRILLE DES DOMAINES
+   ========================================================== */
+
+.mpsi-domain-grid {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* ==========================================================
+   CARTES
+   ========================================================== */
+
+.mpsi-domain-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 18px;
+    padding: 30px 30px 28px;
+    box-shadow: 0 8px 25px rgba(20, 20, 50, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border-left: 5px solid #F57C00;
+}
+
+.mpsi-domain-card:hover {
+    transform: translateY(-4px);
+    border-color: #F57C00;
+    box-shadow: 0 14px 32px rgba(20, 20, 50, 0.10);
+}
+
+/* ==========================================================
+   EN-TÊTE DES CARTES
+   ========================================================== */
+
+.mpsi-domain-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+.mpsi-domain-number {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F57C00;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.mpsi-domain-header h3 {
+    margin: 0;
+    color: #181818;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+/* ==========================================================
+   LISTE DES NOTIONS
+   ========================================================== */
+
+.mpsi-domain-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mpsi-domain-card li {
+    border-top: 1px solid #eeeeee;
+}
+
+.mpsi-domain-card li:first-child {
+    border-top: none;
+}
+
+.mpsi-domain-card li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 11px 2px;
+    color: #444444;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.25s ease, padding-left 0.25s ease;
+}
+
+.mpsi-domain-card li a i {
+    color: #F57C00;
+    font-size: 11px;
+    transition: transform 0.25s ease;
+}
+
+.mpsi-domain-card li a:hover {
+    color: #F57C00;
+    padding-left: 6px;
+}
+
+.mpsi-domain-card li a:hover i {
+    transform: translateX(4px);
+}
+
+/* ==========================================================
+   CARTE ANALYSE — PLUS GRANDE
+   ========================================================== */
+
+.mpsi-domain-large {
+    grid-column: span 2;
+}
+
+/* ==========================================================
+   DEUXIÈME PARTIE
+   ========================================================== */
+
+.mpsi-advanced {
+    background: #c9c9e8;
+}
+
+.mpsi-advanced .mpsi-domain-card {
+    background: #ffffff;
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+.math-footer {
+    background: #111111;
+    color: #ffffff;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+.math-footer p {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 1024px) {
+    .nav-menu li a {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-container {
+        height: 60px;
+        position: relative;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #19182f;
+        flex-direction: column;
+        padding: 20px;
+        gap: 4px;
+        border-bottom: 2px solid #F57C00;
+        display: none;
+        width: 100%;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-menu li a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 16px;
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    .nav-menu li a.math-active::after {
+        display: none;
+    }
+
+    /* Menu hamburger */
+    .navbar .hamburger {
+        display: block !important;
+        color: #ffffff;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .mpsi-hero {
+        padding: 60px 20px 65px;
+    }
+
+    .mpsi-hero h1 {
+        font-size: 36px;
+    }
+
+    .mpsi-domain-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mpsi-domain-large {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .top-bar {
+        display: none;
+    }
+
+    .logo a {
+        font-size: 16px;
+    }
+
+    .nav-container {
+        height: 55px;
+    }
+
+    .nav-menu {
+        top: 55px;
+    }
+
+    .mpsi-hero {
+        padding: 50px 17px 55px;
+    }
+
+    .mpsi-kicker {
+        font-size: 10px;
+    }
+
+    .mpsi-hero h1 {
+        font-size: 30px;
+    }
+
+    .mpsi-hero p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .mpsi-program {
+        padding: 55px 17px 60px;
+    }
+
+    .mpsi-section-heading {
+        margin-bottom: 32px;
+    }
+
+    .mpsi-section-heading h2 {
+        font-size: 25px;
+    }
+
+    .mpsi-domain-card {
+        padding: 24px 20px;
+        border-radius: 15px;
+    }
+
+    .mpsi-domain-header {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .mpsi-domain-number {
+        width: 38px;
+        height: 38px;
+        font-size: 12px;
+    }
+
+    .mpsi-domain-header h3 {
+        font-size: 17px;
+    }
+
+    .mpsi-domain-card li a {
+        font-size: 13px;
+        padding: 10px 2px;
+    }
+}
+/* ==========================================================
+   MODIFICATIONS BARRE DE NAVIGATION - FOND BLANC
+   ========================================================== */
+
+/* Barre de navigation - fond blanc */
+.navbar {
+    background: #ffffff !important;
+    border-bottom: 2px solid #F57C00 !important;
+}
+
+/* Logo - texte noir */
+.logo a {
+    color: #1a1a1a !important;
+}
+
+.logo-orange {
+    color: #F57C00 !important;
+}
+
+.logo-black {
+    color: #1a1a1a !important;
+}
+
+/* Liens de navigation - noir */
+.nav-menu li a {
+    color: #1a1a1a !important;
+}
+
+/* Survol des liens - orange */
+.nav-menu li a:hover {
+    background: rgba(245, 124, 0, 0.08) !important;
+    color: #F57C00 !important;
+}
+
+/* Lien actif "MATHÉMATIQUES" - fond orange, texte blanc */
+.nav-menu li a.math-active {
+    background: #F57C00 !important;
+    color: #ffffff !important;
+}
+
+.nav-menu li a.math-active:hover {
+    background: #e06b00 !important;
+}
+
+/* Indicateur de page active - reste orange */
+.nav-menu li a.math-active::after {
+    background: #F57C00 !important;
+}
+
+/* Menu hamburger - couleur noire pour mobile */
+.navbar .hamburger {
+    color: #1a1a1a !important;
+}
+
+/* Top bar - fond blanc également (si vous voulez) */
+.top-bar {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e6e6e6 !important;
+}
+
+.social-icons a {
+    color: #1a1a1a !important;
+    opacity: 0.6 !important;
+}
+
+.social-icons a:hover {
+    color: #F57C00 !important;
+    opacity: 1 !important;
+}
+
+/* Menu mobile - fond blanc */
+@media (max-width: 900px) {
+    .nav-menu {
+        background: #ffffff !important;
+        border-bottom: 2px solid #F57C00 !important;
+    }
+    
+    .nav-menu li a {
+        color: #1a1a1a !important;
+    }
+    
+    .nav-menu li a:hover {
+        background: rgba(245, 124, 0, 0.08) !important;
+        color: #F57C00 !important;
+    }
+}

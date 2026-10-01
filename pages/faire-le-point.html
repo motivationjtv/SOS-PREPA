@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS PREPA MATHS</title>
+    <!-- FontAwesome pour les icônes réseaux sociaux -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="faire-le-point.css">
+</head>
+<body>
+    <!-- 1. BANDEAU SUPÉRIEUR (RÉSEAUX SOCIAUX) -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="social-links">
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. BARRE DE NAVIGATION -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-bold">SOS</span> <span class="logo-orange">PREPA MATHS</span>
+            </a>
+            <nav class="main-nav">
+    <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../guide.html">Le guide</a></li>
+        <li><a href="../7-etapes.html">Les 7 étapes</a></li>
+        <li><a href="../pourquoi-coach.html">Pourquoi Coach-Prof de Maths</a></li>
+        <li><a href="../faq.html">Vos interrogations</a></li>
+        <li><a href="../mathematiques.html">Mathématiques</a></li>
+        <li><a href="../videos.html">Vidéos</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+    </ul>
+</nav>
+        </div>
+    </header>
+    <main>
+
+
+<!-- ==========================================================
+     INTRODUCTION
+========================================================== -->
+
+<section class="point-intro">
+
+    <div class="point-container">
+
+        <div class="section-label">
+            FAIRE LE POINT
+        </div>
+
+        <h1>
+            Tu travailles,<br>
+            <span>mais quelque chose ne fonctionne plus ?</span>
+        </h1>
+
+        <div class="title-line"></div>
+
+        <p class="intro-text">
+            Avant de chercher une solution, il faut d'abord comprendre
+            ce qui se passe réellement.
+        </p>
+
+        <p class="intro-text">
+            Quelques questions vont nous permettre de mieux comprendre
+            <strong>ta situation, tes difficultés et ce que tu souhaites changer.</strong>
+        </p>
+
+        <p class="intro-note">
+            Ce premier échange n'est pas un cours de maths.
+            Il sert d'abord à faire le point.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     FORMULAIRE
+========================================================== -->
+
+<section class="point-form-section">
+
+    <div class="point-container">
+
+        <form
+    class="situation-form"
+    action="https://formspree.io/f/mjybobbg"
+    method="POST"
+>
+
+
+            <!-- ==================================================
+                 01 — PROFIL
+            ================================================== -->
+
+            <div class="form-block">
+
+                <div class="form-heading">
+
+                    <span class="section-number">
+                        01
+                    </span>
+
+                    <h2>
+                        Qui es-tu ?
+                    </h2>
+
+                    <p>
+                        Quelques informations pour mieux comprendre
+                        ta situation.
+                    </p>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="prenom">
+                            Prénom
+                        </label>
+
+                        <input
+                            type="text"
+                            id="prenom"
+                            name="prenom"
+                            placeholder="Ton prénom"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Adresse email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="ton@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="classe">
+                            Classe
+                        </label>
+
+                        <select id="classe" name="classe">
+
+                            <option value="">
+                                Sélectionne ta classe
+                            </option>
+
+                            <option value="mpsi">
+                                MPSI
+                            </option>
+
+                            <option value="pcsi">
+                                PCSI
+                            </option>
+
+                            <option value="mp">
+                                MP
+                            </option>
+
+                            <option value="mpi">
+                                MPI
+                            </option>
+
+                            <option value="psi">
+                                PSI
+                            </option>
+
+                            <option value="pt">
+                                PT
+                            </option>
+
+                            <option value="autre">
+                                Autre
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="etablissement">
+                            Établissement
+                        </label>
+
+                        <input
+                            type="text"
+                            id="etablissement"
+                            name="etablissement"
+                            placeholder="Nom de ton établissement"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 02 — DIFFICULTÉS
+            ================================================== -->
+
+            <div class="form-block">
+
+                <div class="form-heading">
+
+                    <span class="section-number">
+                        02
+                    </span>
+
+                    <h2>
+                        Qu'est-ce qui te pose le plus problème ?
+                    </h2>
+
+                    <p>
+                        Tu peux sélectionner plusieurs réponses.
+                    </p>
+
+                </div>
+
+
+                <div class="choice-grid">
+
+                    <label class="choice-card">
+
+                        <input
+                            type="checkbox"
+                            name="difficultes[]"
+                            value="travail"
+                        >
+
+                        <span>
+                            Je travaille beaucoup mais mes résultats stagnent.
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="checkbox"
+                            name="difficultes[]"
+                            value="cours"
+                        >
+
+                        <span>
+                            J'ai du mal à apprendre et à maîtriser mon cours.
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="checkbox"
+                            name="difficultes[]"
+                            value="exercices"
+                        >
+
+                        <span>
+                            Je comprends le cours mais je bloque sur les exercices.
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="checkbox"
+                            name="difficultes[]"
+                            value="methode"
+                        >
+
+                        <span>
+                            Je manque de méthode.
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="checkbox"
+                            name="difficultes[]"
+                            value="erreurs"
+                        >
+
+                        <span>
+                            Je fais souvent les mêmes erreurs.
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="checkbox"
+                            name="difficultes[]"
+                            value="organisation"
+                        >
+
+                        <span>
+                            J'ai du mal à organiser mon travail.
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="checkbox"
+                            name="difficultes[]"
+                            value="confiance"
+                        >
+
+                        <span>
+                            J'ai perdu confiance en mes capacités.
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="checkbox"
+                            name="difficultes[]"
+                            value="autre"
+                        >
+
+                        <span>
+                            Je ne sais pas exactement ce qui bloque.
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 03 — SITUATION
+            ================================================== -->
+
+            <div class="form-block">
+
+                <div class="form-heading">
+
+                    <span class="section-number">
+                        03
+                    </span>
+
+                    <h2>
+                        Explique-moi ta situation
+                    </h2>
+
+                    <p>
+                        Avec tes propres mots, raconte ce que tu vis actuellement.
+                    </p>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <textarea
+                        id="situation"
+                        name="situation"
+                        rows="8"
+                        placeholder="Depuis quand rencontres-tu ces difficultés ? Comment travailles-tu actuellement ? Qu'est-ce qui te donne le sentiment de ne plus progresser ?"
+                        required
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 04 — OBJECTIF
+            ================================================== -->
+
+            <div class="form-block">
+
+                <div class="form-heading">
+
+                    <span class="section-number">
+                        04
+                    </span>
+
+                    <h2>
+                        Qu'aimerais-tu réussir à changer ?
+                    </h2>
+
+                    <p>
+                        Choisis ce que tu aimerais améliorer en priorité.
+                    </p>
+
+                </div>
+
+
+                <div class="choice-grid">
+
+                    <label class="choice-card">
+
+                        <input
+                            type="checkbox"
+                            name="objectifs[]"
+                            value="cours"
+                        >
+
+                        <span>
+                            Mieux travailler mon cours.
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="checkbox"
+                            name="objectifs[]"
+                            value="exercices"
+                        >
+
+                        <span>
+                            Devenir plus efficace dans mes exercices.
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="checkbox"
+                            name="objectifs[]"
+                            value="erreurs"
+                        >
+
+                        <span>
+                            Mieux comprendre et exploiter mes erreurs.
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="checkbox"
+                            name="objectifs[]"
+                            value="regularite"
+                        >
+
+                        <span>
+                            Retrouver de la régularité.
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="checkbox"
+                            name="objectifs[]"
+                            value="confiance"
+                        >
+
+                        <span>
+                            Reprendre confiance.
+                        </span>
+
+                    </label>
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="checkbox"
+                            name="objectifs[]"
+                            value="autonomie"
+                        >
+
+                        <span>
+                            Devenir progressivement autonome.
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 05 — APRÈS
+            ================================================== -->
+
+            <div class="after-block">
+
+                <div class="section-label">
+                    ET APRÈS ?
+                </div>
+
+                <h2>
+                    Que se passe-t-il après ton message ?
+                </h2>
+
+
+                <div class="after-grid">
+
+                    <div class="after-card">
+
+                        <span>01</span>
+
+                        <h3>
+                            Tu nous expliques
+                        </h3>
+
+                        <p>
+                            Tu prends quelques minutes pour décrire
+                            ta situation.
+                        </p>
+
+                    </div>
+
+
+                    <div class="after-card">
+
+                        <span>02</span>
+
+                        <h3>
+                            Nous regardons
+                        </h3>
+
+                        <p>
+                            Nous cherchons à comprendre où se situe
+                            réellement la difficulté.
+                        </p>
+
+                    </div>
+
+
+                    <div class="after-card">
+
+                        <span>03</span>
+
+                        <h3>
+                            Nous échangeons
+                        </h3>
+
+                        <p>
+                            Si nécessaire, nous prenons contact
+                            pour en discuter.
+                        </p>
+
+                    </div>
+
+
+                    <div class="after-card">
+
+                        <span>04</span>
+
+                        <h3>
+                            Nous décidons ensemble
+                        </h3>
+
+                        <p>
+                            Nous voyons quelle suite peut être
+                            la plus adaptée à ta situation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 ENVOI
+            ================================================== -->
+
+            <div class="form-submit">
+
+                <p>
+                    Prends le temps de répondre sincèrement.
+                    Il n'y a pas de « bonne » ou de « mauvaise » réponse.
+                </p>
+
+                <button type="submit" class="submit-button">
+                    Envoyer ma situation
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     ESPACE PARENTS
+========================================================== -->
+
+<section class="parents-section">
+
+    <div class="point-container">
+
+        <div class="parents-box">
+
+            <h2>
+                Tu es parent ?
+            </h2>
+
+            <p>
+                Une page dédiée vous permet également de nous expliquer
+                la situation de votre enfant.
+            </p>
+
+            <a href="parents.html" class="parents-button">
+                Espace parents
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+    <!-- 3. FOOTER (PIED DE PAGE) -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>SOS PREPA MATHS</h3>
+                <p>Accompagnement, méthodologie et ressources en mathématiques pour la réussite en classes préparatoires.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i>sosprepamaths@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 SOS PREPA MATHS. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <body>

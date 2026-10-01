@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Écoles — Mécanique | SOS PREPA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="mecanique.css">
+<style>
+.ecoles-intro{width:min(900px,92%);margin:0 auto 8px;text-align:center;}
+.ecoles-note{width:min(900px,92%);margin:0 auto 32px;background:var(--orange-light);border-left:5px solid var(--accent-orange);padding:14px 20px;border-radius:8px;font-size:.92rem;}
+.ecoles-table{width:min(1150px,94%);margin:0 auto;display:grid;gap:14px;}
+.ecole-row,.ecole-head{display:grid;grid-template-columns:.8fr 1.25fr 1.25fr;gap:16px;align-items:start;}
+.ecole-head{padding:0 20px;font-weight:700;font-size:.85rem;color:var(--accent-orange);}
+.ecole-row{background:#fff;border-radius:var(--radius);padding:20px;box-shadow:0 2px 10px rgba(23,32,51,.07);}
+.ecole-spec{display:flex;align-items:flex-start;gap:10px;}
+.ecole-spec h3{font-size:.98rem;color:var(--dark-navy);line-height:1.35;}
+.ecole-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:var(--accent-orange);color:#fff;font-size:.8rem;font-weight:700;flex:none;}
+.cell-title{display:none;font-size:.85rem;color:var(--accent-orange);margin-bottom:8px;}
+.ecole-rank{list-style:none;display:grid;gap:8px;}
+.ecole-rank li{display:flex;gap:10px;align-items:flex-start;background:var(--bg);border-radius:6px;padding:8px 10px;}
+.rk{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--dark-navy);color:#fff;font-size:.72rem;font-weight:700;flex:none;margin-top:1px;}
+.ecole-rank strong{font-size:.88rem;color:var(--dark-navy);}
+.ecole-rank em{font-size:.78rem;color:#5b6472;font-style:normal;}
+.ecole-rank div span{display:block;font-size:.78rem;color:#5b6472;margin-top:2px;}
+@media (max-width:820px){.ecole-head{display:none;}.ecole-row{grid-template-columns:1fr;}.cell-title{display:block;}}
+.ecoles-renvoi{width:min(1150px,94%);margin:18px auto 0;text-align:center;font-size:.92rem;}
+.ecoles-renvoi a{color:var(--accent-orange);font-weight:600;}
+</style>
+</head>
+<body>
+<div class="top-bar"><div class="container top-bar-content"><div class="social-links">
+<a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+<a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+</div></div></div>
+
+<header class="main-header"><div class="container header-container">
+<a href="../index.html" class="logo"><span class="logo-bold">SOS</span> <span class="logo-orange">PREPA MATHS</span></a>
+<nav class="main-nav"><ul>
+<li><a href="../index.html">Accueil</a></li>
+<li><a href="../guide.html">Le guide</a></li>
+<li><a href="../7-etapes.html">Les 7 étapes</a></li>
+<li><a href="../pourquoi-coach.html">Pourquoi Coach-Prof de Maths</a></li>
+<li><a href="../faq.html">Vos interrogations</a></li>
+<li><a href="../mathematiques.html">Mathématiques</a></li>
+<li><a href="../videos.html">Vidéos</a></li>
+<li><a href="../contact.html">Contact</a></li>
+</ul></nav></div></header>
+
+<main>
+<section class="domain-intro">
+<div class="domain-number">DOMAINE 3 — ÉCOLES</div>
+<h1>OÙ ÉTUDIER LA MÉCANIQUE ?</h1>
+<p class="intro-lead">Pour chaque spécialité, les écoles marocaines puis françaises accessibles après une classe préparatoire, classées par ordre de pertinence.</p>
+</section>
+
+<p class="ecoles-intro">Cycle ingénieur : 5 ans après le bac, ou 3 ans après une classe préparatoire (CPGE) via un concours.</p>
+<div class="ecoles-note"><strong>Comment lire le classement :</strong> il n&#x27;existe pas de classement officiel par spécialité. L&#x27;ordre (1, 2, 3) est <strong>indicatif</strong> : adéquation de l&#x27;école avec la spécialité, puis réputation dans le domaine. <strong>Concours :</strong> le <strong>CNC</strong> est marocain (CPGE marocaines) ; en France, le <strong>CC INP</strong>, <strong>Mines-Ponts</strong> et <strong>Mines-Télécom</strong> concernent surtout les filières MP/PC/PSI. <strong>Centrale-Supélec</strong> est une banque d&#x27;épreuves pour les filières MP/PC/PSI. Les intitulés de filières et les modalités d&#x27;admission évoluent : vérifiez-les sur le site de chaque école.</div>
+
+<div class="ecoles-table">
+<div class="ecole-head"><div>Spécialité</div><div>🇲🇦 Écoles marocaines</div><div>🇫🇷 Écoles françaises</div></div>
+<div class="ecole-row"><div class="ecole-spec"><span class="ecole-num">01</span><h3>Conception mécanique</h3></div><div class="ecole-cell"><h4 class="cell-title">🇲🇦 Maroc</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>ENSAM</strong> <em>(Casablanca, Meknès)</em><span>Génie mécanique — CNC (CPGE)</span></div></li><li><span class="rk">2</span><div><strong>EMI</strong> <em>(Rabat)</em><span>Génie mécanique et électromécanique — CNC (CPGE)</span></div></li><li><span class="rk">3</span><div><strong>ECC</strong> <em>(Casablanca)</em><span>Ingénierie des systèmes mécaniques — Concours ECC-CNC (CPGE)</span></div></li><li><span class="rk">4</span><div><strong>ENSA (Kénitra, Tétouan…)</strong> <em>(Réseau ENSA)</em><span>Génie mécanique — CNC (CPGE)</span></div></li></ol></div><div class="ecole-cell"><h4 class="cell-title">🇫🇷 France</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>Arts et Métiers</strong> <em>(Plusieurs campus)</em><span>Génie mécanique — Centrale-Supélec (voir site)</span></div></li><li><span class="rk">2</span><div><strong>Centrale Nantes</strong> <em>(Nantes)</em><span>Mécanique et conception — Centrale-Supélec</span></div></li><li><span class="rk">3</span><div><strong>INSA Lyon</strong> <em>(Lyon)</em><span>Génie mécanique — admission CPGE (voir site)</span></div></li></ol></div></div><div class="ecole-row"><div class="ecole-spec"><span class="ecole-num">02</span><h3>Structures, vibrations et résistance des matériaux</h3></div><div class="ecole-cell"><h4 class="cell-title">🇲🇦 Maroc</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>ENSAM</strong> <em>(Casablanca, Meknès)</em><span>Génie mécanique — CNC (CPGE)</span></div></li><li><span class="rk">2</span><div><strong>EMI</strong> <em>(Rabat)</em><span>Génie mécanique — CNC (CPGE)</span></div></li><li><span class="rk">3</span><div><strong>EHTP</strong> <em>(Casablanca)</em><span>Génie civil et structures — CNC (CPGE)</span></div></li></ol></div><div class="ecole-cell"><h4 class="cell-title">🇫🇷 France</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>ENSTA Paris</strong> <em>(Palaiseau)</em><span>Mécanique des structures — Mines-Ponts</span></div></li><li><span class="rk">2</span><div><strong>Centrale Lyon</strong> <em>(Écully)</em><span>Mécanique et acoustique — Centrale-Supélec</span></div></li><li><span class="rk">3</span><div><strong>Arts et Métiers</strong> <em>(Plusieurs campus)</em><span>Mécanique des structures — Centrale-Supélec (voir site)</span></div></li></ol></div></div><div class="ecole-row"><div class="ecole-spec"><span class="ecole-num">03</span><h3>Mécanique des fluides</h3></div><div class="ecole-cell"><h4 class="cell-title">🇲🇦 Maroc</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>EMI</strong> <em>(Rabat)</em><span>Génie mécanique et énergétique — CNC (CPGE)</span></div></li><li><span class="rk">2</span><div><strong>ENSAM</strong> <em>(Casablanca, Meknès)</em><span>Génie mécanique et énergétique — CNC (CPGE)</span></div></li><li><span class="rk">3</span><div><strong>EHTP</strong> <em>(Casablanca)</em><span>Hydraulique — CNC (CPGE)</span></div></li></ol></div><div class="ecole-cell"><h4 class="cell-title">🇫🇷 France</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>Toulouse INP – ENSEEIHT</strong> <em>(Toulouse)</em><span>Hydraulique et mécanique des fluides — CC INP</span></div></li><li><span class="rk">2</span><div><strong>Centrale Lyon</strong> <em>(Écully)</em><span>Mécanique des fluides — Centrale-Supélec</span></div></li><li><span class="rk">3</span><div><strong>ISAE-ENSMA</strong> <em>(Poitiers)</em><span>Aérodynamique et fluides — CC INP</span></div></li></ol></div></div><div class="ecole-row"><div class="ecole-spec"><span class="ecole-num">04</span><h3>Thermique et énergétique</h3></div><div class="ecole-cell"><h4 class="cell-title">🇲🇦 Maroc</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>ENSAM</strong> <em>(Casablanca, Meknès)</em><span>Génie mécanique et énergétique — CNC (CPGE)</span></div></li><li><span class="rk">2</span><div><strong>EMI</strong> <em>(Rabat)</em><span>Génie électromécanique et énergie — CNC (CPGE)</span></div></li><li><span class="rk">3</span><div><strong>ECC</strong> <em>(Casablanca)</em><span>Systèmes énergétiques complexes — Concours ECC-CNC (CPGE)</span></div></li><li><span class="rk">4</span><div><strong>ENSA (Agadir, Marrakech…)</strong> <em>(Réseau ENSA)</em><span>Énergétique et énergies renouvelables — CNC (CPGE)</span></div></li></ol></div><div class="ecole-cell"><h4 class="cell-title">🇫🇷 France</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>Mines Paris – PSL</strong> <em>(Paris)</em><span>Énergétique et procédés — Mines-Ponts</span></div></li><li><span class="rk">2</span><div><strong>INSA Lyon</strong> <em>(Lyon)</em><span>Génie énergétique et environnement — admission CPGE (voir site)</span></div></li><li><span class="rk">3</span><div><strong>ISAE-ENSMA</strong> <em>(Poitiers)</em><span>Thermique et énergétique — CC INP</span></div></li></ol></div></div><div class="ecole-row"><div class="ecole-spec"><span class="ecole-num">05</span><h3>Matériaux et comportement mécanique</h3></div><div class="ecole-cell"><h4 class="cell-title">🇲🇦 Maroc</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>ENSAM</strong> <em>(Casablanca, Meknès)</em><span>Génie mécanique et matériaux — CNC (CPGE)</span></div></li><li><span class="rk">2</span><div><strong>EMI</strong> <em>(Rabat)</em><span>Génie mécanique — CNC (CPGE)</span></div></li><li><span class="rk">3</span><div><strong>FST (Mohammedia, Settat…)</strong> <em>(Réseau FST)</em><span>Science des matériaux — CNC (CPGE)</span></div></li></ol></div><div class="ecole-cell"><h4 class="cell-title">🇫🇷 France</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>Mines Paris – PSL</strong> <em>(Paris)</em><span>Matériaux et Centre des Matériaux — Mines-Ponts</span></div></li><li><span class="rk">2</span><div><strong>Mines Nancy</strong> <em>(Nancy)</em><span>Matériaux et métallurgie — Mines-Ponts</span></div></li><li><span class="rk">3</span><div><strong>ISAE-ENSMA</strong> <em>(Poitiers)</em><span>Mécanique et matériaux — CC INP</span></div></li></ol></div></div><div class="ecole-row"><div class="ecole-spec"><span class="ecole-num">06</span><h3>Fabrication et procédés mécaniques</h3></div><div class="ecole-cell"><h4 class="cell-title">🇲🇦 Maroc</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>ENSAM</strong> <em>(Casablanca, Meknès)</em><span>Génie mécanique et fabrication — CNC (CPGE)</span></div></li><li><span class="rk">2</span><div><strong>EMI</strong> <em>(Rabat)</em><span>Génie industriel et mécanique — CNC (CPGE)</span></div></li><li><span class="rk">3</span><div><strong>ENSA (Kénitra, Tétouan…)</strong> <em>(Réseau ENSA)</em><span>Génie mécanique — CNC (CPGE)</span></div></li></ol></div><div class="ecole-cell"><h4 class="cell-title">🇫🇷 France</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>Arts et Métiers</strong> <em>(Plusieurs campus)</em><span>Fabrication et procédés — Centrale-Supélec (voir site)</span></div></li><li><span class="rk">2</span><div><strong>IMT Mines Albi</strong> <em>(Albi)</em><span>Procédés et fabrication — Mines-Télécom</span></div></li><li><span class="rk">3</span><div><strong>Mines Saint-Étienne</strong> <em>(Saint-Étienne)</em><span>Fabrication additive et procédés — Mines-Télécom</span></div></li></ol></div></div><div class="ecole-row"><div class="ecole-spec"><span class="ecole-num">07</span><h3>Mécatronique et systèmes mécaniques intelligents</h3></div><div class="ecole-cell"><h4 class="cell-title">🇲🇦 Maroc</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>ENSAM</strong> <em>(Casablanca, Meknès)</em><span>Mécatronique — CNC (CPGE)</span></div></li><li><span class="rk">2</span><div><strong>EMI</strong> <em>(Rabat)</em><span>Génie électromécanique — CNC (CPGE)</span></div></li><li><span class="rk">3</span><div><strong>ENSEM</strong> <em>(Casablanca)</em><span>Génie électrique et mécatronique — CNC (CPGE)</span></div></li></ol></div><div class="ecole-cell"><h4 class="cell-title">🇫🇷 France</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>ENSMM</strong> <em>(Besançon)</em><span>Mécanique, microtechniques et mécatronique — CC INP</span></div></li><li><span class="rk">2</span><div><strong>Arts et Métiers</strong> <em>(Plusieurs campus)</em><span>Mécatronique — Centrale-Supélec (voir site)</span></div></li><li><span class="rk">3</span><div><strong>INSA Toulouse</strong> <em>(Toulouse)</em><span>Génie mécanique et mécatronique — admission CPGE (voir site)</span></div></li></ol></div></div><div class="ecole-row"><div class="ecole-spec"><span class="ecole-num">08</span><h3>Maintenance et fiabilité des systèmes mécaniques</h3></div><div class="ecole-cell"><h4 class="cell-title">🇲🇦 Maroc</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>EMI</strong> <em>(Rabat)</em><span>Génie industriel, maintenance — CNC (CPGE)</span></div></li><li><span class="rk">2</span><div><strong>ENSAM</strong> <em>(Casablanca, Meknès)</em><span>Génie industriel et maintenance — CNC (CPGE)</span></div></li><li><span class="rk">3</span><div><strong>ENSA (Kénitra, Tétouan…)</strong> <em>(Réseau ENSA)</em><span>Génie industriel — CNC (CPGE)</span></div></li></ol></div><div class="ecole-cell"><h4 class="cell-title">🇫🇷 France</h4><ol class="ecole-rank"><li><span class="rk">1</span><div><strong>Arts et Métiers</strong> <em>(Plusieurs campus)</em><span>Maintenance et fiabilité — Centrale-Supélec (voir site)</span></div></li><li><span class="rk">2</span><div><strong>IMT Mines Alès</strong> <em>(Alès)</em><span>Risques et fiabilité — Mines-Télécom</span></div></li><li><span class="rk">3</span><div><strong>IMT Mines Albi</strong> <em>(Albi)</em><span>Génie industriel et fiabilité — Mines-Télécom</span></div></li></ol></div></div>
+</div>
+
+<p class="ecoles-renvoi">Vous hésitez entre plusieurs domaines ? <a href="ecoles-generalistes.html">Voir les écoles généralistes</a>, qui en proposent plusieurs à la fois.</p>
+<div class="back-link"><a href="mecanique.html"><i class="fa-solid fa-arrow-left"></i> Retour au Domaine 3</a></div>
+</main>
+
+<footer><p>© SOS PREPA – Coach-Prof de maths</p></footer>
+</body>
+</html>

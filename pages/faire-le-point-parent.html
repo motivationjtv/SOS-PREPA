@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS PREPA MATHS</title>
+    <!-- FontAwesome pour les icônes réseaux sociaux -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="faire-le-point-parent.css">
+</head>
+<body>
+    <!-- 1. BANDEAU SUPÉRIEUR (RÉSEAUX SOCIAUX) -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="social-links">
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. BARRE DE NAVIGATION -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-bold">SOS</span> <span class="logo-orange">PREPA MATHS</span>
+            </a>
+            <nav class="main-nav">
+    <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../guide.html">Le guide</a></li>
+        <li><a href="../7-etapes.html">Les 7 étapes</a></li>
+        <li><a href="../pourquoi-coach.html">Pourquoi Coach-Prof de Maths</a></li>
+        <li><a href="../faq.html">Vos interrogations</a></li>
+        <li><a href="../mathematiques.html">Mathématiques</a></li>
+        <li><a href="../videos.html">Vidéos</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+    </ul>
+</nav>
+        </div>
+    </header>
+    <main>
+        
+
+        <!-- ==================================================
+             INTRODUCTION
+        =================================================== -->
+
+        <section class="parent-form-hero">
+
+            <div class="parent-form-container">
+
+                <span class="form-label">
+                    ESPACE PARENTS
+                </span>
+
+                <h1>
+                    Faire le point sur la situation
+                    de votre enfant
+                </h1>
+
+                <p>
+                    Vous êtes le mieux placé pour nous dire
+                    ce que vous observez au quotidien.
+                </p>
+
+                <p>
+                    Quelques informations nous permettront
+                    de mieux comprendre sa situation avant
+                    notre échange.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             FORMULAIRE
+        =================================================== -->
+
+        <section class="parent-form-section">
+
+            <div class="parent-form-container">
+
+                <div class="parent-form-card">
+
+                    <div class="form-introduction">
+
+                        <h2>
+                            Parlons de sa situation
+                        </h2>
+
+                        <p>
+                            Il n'est pas nécessaire de tout savoir
+                            ni de tout expliquer parfaitement.
+                        </p>
+
+                        <p>
+                            Décrivez simplement ce que vous constatez,
+                            ce qui vous préoccupe et ce que vous avez
+                            déjà essayé de mettre en place.
+                        </p>
+
+                    </div>
+
+
+                    <!-- ==================================================
+                         FORMSPREE
+                    =================================================== -->
+
+                    <form
+                        action="https://formspree.io/f/mjybobbg"
+                        method="POST"
+                    >
+
+                        <!-- ------------------------------------------
+                             INFORMATIONS PARENT
+                        ------------------------------------------- -->
+
+                        <div class="form-group">
+
+                            <label for="parent-name">
+                                Votre prénom
+                            </label>
+
+                            <input
+                                type="text"
+                                id="parent-name"
+                                name="parent_name"
+                                placeholder="Votre prénom"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Votre adresse e-mail
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="votre@email.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- ------------------------------------------
+                             INFORMATIONS ENFANT
+                        ------------------------------------------- -->
+
+                        <div class="form-group">
+
+                            <label for="student-name">
+                                Prénom de votre enfant
+                            </label>
+
+                            <input
+                                type="text"
+                                id="student-name"
+                                name="student_name"
+                                placeholder="Prénom de votre enfant"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="class">
+                                Sa classe / filière
+                            </label>
+
+                            <input
+                                type="text"
+                                id="class"
+                                name="class"
+                                placeholder="Ex. MPSI, MP, PCSI..."
+                            >
+
+                        </div>
+
+
+                        <!-- ------------------------------------------
+                             DEPUIS QUAND ?
+                        ------------------------------------------- -->
+
+                        <div class="form-group">
+
+                            <label for="duration">
+                                Depuis quand avez-vous le sentiment
+                                qu'il rencontre des difficultés ?
+                            </label>
+
+                            <select
+                                id="duration"
+                                name="duration"
+                            >
+
+                                <option value="">
+                                    Sélectionnez une réponse
+                                </option>
+
+                                <option value="quelques-semaines">
+                                    Depuis quelques semaines
+                                </option>
+
+                                <option value="quelques-mois">
+                                    Depuis quelques mois
+                                </option>
+
+                                <option value="debut-prepa">
+                                    Depuis le début de la prépa
+                                </option>
+
+                                <option value="annee-precedente">
+                                    Depuis l'année précédente
+                                </option>
+
+                                <option value="autre">
+                                    Autre
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- ------------------------------------------
+                             CE QUE LE PARENT OBSERVE
+                        ------------------------------------------- -->
+
+                        <fieldset>
+
+                            <legend>
+                                Que constatez-vous actuellement ?
+                            </legend>
+
+                            <label class="checkbox-line">
+
+                                <input
+                                    type="checkbox"
+                                    name="observations[]"
+                                    value="baisse-resultats"
+                                >
+
+                                <span>
+                                    Une baisse des résultats
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-line">
+
+                                <input
+                                    type="checkbox"
+                                    name="observations[]"
+                                    value="organisation"
+                                >
+
+                                <span>
+                                    Des difficultés à s'organiser
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-line">
+
+                                <input
+                                    type="checkbox"
+                                    name="observations[]"
+                                    value="confiance"
+                                >
+
+                                <span>
+                                    Une perte de confiance
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-line">
+
+                                <input
+                                    type="checkbox"
+                                    name="observations[]"
+                                    value="motivation"
+                                >
+
+                                <span>
+                                    Une perte de motivation
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-line">
+
+                                <input
+                                    type="checkbox"
+                                    name="observations[]"
+                                    value="fatigue"
+                                >
+
+                                <span>
+                                    Une fatigue importante
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-line">
+
+                                <input
+                                    type="checkbox"
+                                    name="observations[]"
+                                    value="mathematiques"
+                                >
+
+                                <span>
+                                    Des difficultés particulières
+                                    en mathématiques
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-line">
+
+                                <input
+                                    type="checkbox"
+                                    name="observations[]"
+                                    value="autre"
+                                >
+
+                                <span>
+                                    Autre
+                                </span>
+
+                            </label>
+
+                        </fieldset>
+
+
+                        <!-- ------------------------------------------
+                             PREOCCUPATION PRINCIPALE
+                        ------------------------------------------- -->
+
+                        <div class="form-group">
+
+                            <label for="concern">
+                                Qu'est-ce qui vous préoccupe
+                                le plus aujourd'hui ?
+                            </label>
+
+                            <textarea
+                                id="concern"
+                                name="main_concern"
+                                rows="6"
+                                placeholder="Décrivez simplement ce qui vous inquiète..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- ------------------------------------------
+                             CE QUI A DEJA ETE ESSAYE
+                        ------------------------------------------- -->
+
+                        <div class="form-group">
+
+                            <label for="already-tried">
+                                Qu'avez-vous déjà essayé de mettre
+                                en place pour l'aider ?
+                            </label>
+
+                            <textarea
+                                id="already-tried"
+                                name="already_tried"
+                                rows="6"
+                                placeholder="Cours particuliers, changement d'organisation, discussion avec l'étudiant, etc."
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- ------------------------------------------
+                             INFORMATIONS COMPLEMENTAIRES
+                        ------------------------------------------- -->
+
+                        <div class="form-group">
+
+                            <label for="additional-info">
+                                Souhaitez-vous ajouter quelque chose
+                                que vous jugez important ?
+                            </label>
+
+                            <textarea
+                                id="additional-info"
+                                name="additional_information"
+                                rows="6"
+                                placeholder="Une information qui pourrait nous aider à mieux comprendre la situation..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- ------------------------------------------
+                             BOUTON
+                        ------------------------------------------- -->
+
+                        <div class="form-submit">
+
+                            <button
+                                type="submit"
+                                class="parent-form-button"
+                            >
+                                Envoyer ma demande
+                            </button>
+
+                        </div>
+
+
+                        <p class="form-confidentiality">
+                            Vos informations resteront confidentielles
+                            et seront utilisées uniquement pour répondre
+                            à votre demande.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    
+
+
+
+</main>
+    <!-- 3. FOOTER (PIED DE PAGE) -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>SOS PREPA MATHS</h3>
+                <p>Accompagnement, méthodologie et ressources en mathématiques pour la réussite en classes préparatoires.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i>sosprepamaths@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 SOS PREPA MATHS. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <body>

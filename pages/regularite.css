@@ -1,0 +1,528 @@
+/* =========================================
+   HERO
+========================================= */
+
+.regularite-hero {
+    background: #f7f7f7;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.regularite-hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    padding: 75px 25px 70px;
+}
+
+.page-number {
+    color: #ff7900;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.regularite-hero h1 {
+    margin: 0;
+
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.orange-line {
+    width: 55px;
+    height: 3px;
+
+    background: #ff7900;
+
+    margin: 22px auto;
+}
+
+.hero-baseline {
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   STRUCTURE
+========================================= */
+
+.content-section {
+    padding: 75px 0;
+}
+
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/* =========================================
+   TITRES
+========================================= */
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-heading.light {
+    color: #ffffff;
+}
+
+.section-label {
+    display: block;
+
+    color: #ff7900;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    margin: 0 0 12px;
+
+    font-size: 32px;
+}
+
+.section-heading p {
+    max-width: 700px;
+
+    margin: 0;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   TEXTE
+========================================= */
+
+.content-container > p {
+    max-width: 750px;
+
+    margin: 0 auto 18px;
+
+    line-height: 1.75;
+}
+
+.large-text {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   MESSAGE CENTRAL
+========================================= */
+
+.key-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    margin-top: 40px;
+
+    padding: 25px;
+
+    background: #171717;
+
+    color: #ffffff;
+}
+
+.key-message strong {
+    color: #ffffff;
+
+    font-size: 17px;
+}
+
+.key-message strong:last-child {
+    color: #ff7900;
+}
+
+.key-message span {
+    color: #ff7900;
+
+    font-size: 20px;
+}
+
+
+/* =========================================
+   PIÈGE
+========================================= */
+
+.zigzag-section {
+    padding: 75px 0;
+
+    background: #f7f7f7;
+}
+
+.zigzag-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 40px 1fr 40px 1fr;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.zigzag-card {
+    min-height: 210px;
+
+    padding: 28px;
+
+    background: #ffffff;
+
+    border-top: 4px solid #ff7900;
+}
+
+.card-number {
+    color: #ff7900;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.zigzag-card h3 {
+    margin: 14px 0;
+
+    font-size: 20px;
+}
+
+.zigzag-card p {
+    margin: 0;
+
+    line-height: 1.65;
+}
+
+.zigzag-arrow {
+    color: #ff7900;
+
+    font-size: 24px;
+
+    text-align: center;
+}
+
+.warning-box {
+    margin-top: 35px;
+
+    padding: 25px;
+
+    border-left: 4px solid #ff7900;
+
+    background: #ffffff;
+}
+
+.warning-box strong {
+    display: block;
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+.warning-box p {
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   EFFETS
+========================================= */
+
+.effects-section {
+    padding: 75px 0;
+
+    background: #171717;
+}
+
+.effects-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.effect-card {
+    padding: 25px;
+
+    border: 1px solid #444444;
+
+    color: #ffffff;
+}
+
+.effect-card > span {
+    color: #ff7900;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.effect-card h3 {
+    margin: 14px 0;
+
+    font-size: 18px;
+}
+
+.effect-card p {
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   PROGRÈS
+========================================= */
+
+.progress-section {
+    padding: 80px 0;
+
+    background: #ffffff;
+}
+
+.progress-content {
+    max-width: 750px;
+}
+
+.progress-content h2 {
+    margin: 0 0 25px;
+
+    font-size: 35px;
+}
+
+.progress-content p {
+    line-height: 1.75;
+
+    font-size: 17px;
+}
+
+.progress-highlight {
+    margin-top: 30px;
+
+    padding: 25px;
+
+    border-left: 4px solid #ff7900;
+
+    background: #f7f7f7;
+}
+
+.progress-highlight strong {
+    display: block;
+
+    font-size: 19px;
+}
+
+.progress-highlight span {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #ff7900;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   CITATION
+========================================= */
+
+.quote-section {
+    padding: 80px 0;
+
+    background: #f7f7f7;
+
+    text-align: center;
+}
+
+.quote-line {
+    width: 45px;
+    height: 3px;
+
+    background: #ff7900;
+
+    margin: 0 auto 30px;
+}
+
+.quote-section blockquote {
+    max-width: 750px;
+
+    margin: 0 auto 12px;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    line-height: 1.35;
+}
+
+.quote-section strong {
+    display: block;
+
+    color: #ff7900;
+
+    font-size: 22px;
+}
+
+
+/* =========================================
+   TRANSITION
+========================================= */
+
+.transition-box {
+    max-width: 750px;
+
+    padding: 30px;
+
+    border-left: 4px solid #ff7900;
+
+    background: #f7f7f7;
+}
+
+.transition-box h2 {
+    margin: 0 0 22px;
+
+    font-size: 27px;
+}
+
+.transition-box p {
+    line-height: 1.7;
+}
+
+.transition-box strong {
+    display: block;
+
+    margin-top: 20px;
+
+    color: #ff7900;
+
+    font-size: 18px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.page-navigation {
+    border-top: 1px solid #eeeeee;
+
+    padding: 30px 0;
+}
+
+.page-navigation .content-container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-link,
+.next-link {
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.back-link {
+    color: #222;
+}
+
+.next-link {
+    color: #ff7900;
+}
+
+.back-link:hover,
+.next-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .main-nav {
+        display: none;
+    }
+
+    .effects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .zigzag-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .zigzag-arrow {
+        transform: rotate(90deg);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .regularite-hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-baseline {
+        font-size: 17px;
+    }
+
+    .content-section,
+    .zigzag-section,
+    .effects-section,
+    .progress-section,
+    .quote-section {
+        padding: 55px 0;
+    }
+
+    .key-message {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .key-message span {
+        transform: rotate(90deg);
+    }
+
+    .effects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-section blockquote {
+        font-size: 23px;
+    }
+
+    .page-navigation .content-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

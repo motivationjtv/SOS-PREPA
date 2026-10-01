@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MPSI | Mathématiques | SOS PREPA MATHS</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS spécifique à la page MPSI -->
+<link rel="stylesheet" href="mathematiques-mpsi.css">
+
+</head>
+<script>
+    // Menu hamburger pour mobile
+    document.addEventListener('DOMContentLoaded', function() {
+        const navContainer = document.querySelector('.nav-container');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        // Créer le bouton hamburger
+        const hamburger = document.createElement('div');
+        hamburger.className = 'hamburger';
+        hamburger.style.cssText = `
+            display: none;
+            color: #ffffff;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+        `;
+        hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        
+        // Ajouter le bouton dans le nav-container
+        if (navContainer) {
+            navContainer.appendChild(hamburger);
+        }
+        
+        // Fonction pour afficher/masquer le menu
+        function toggleMenu() {
+            if (navMenu) {
+                navMenu.classList.toggle('open');
+                const icon = hamburger.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            }
+        }
+        
+        // Écouteur sur le hamburger
+        hamburger.addEventListener('click', toggleMenu);
+        
+        // Gérer le responsive
+        function checkWidth() {
+            if (window.innerWidth <= 900) {
+                hamburger.style.display = 'block';
+            } else {
+                hamburger.style.display = 'none';
+                if (navMenu) {
+                    navMenu.classList.remove('open');
+                    const icon = hamburger.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                }
+            }
+        }
+        
+        checkWidth();
+        window.addEventListener('resize', checkWidth);
+    });
+</script>
+
+
+<body>
+
+
+<!-- =========================================
+     TOP BAR
+========================================= -->
+
+<div class="top-bar">
+
+    <div class="top-container">
+
+        <div class="social-icons">
+
+            <a href="mailto:votre@email.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     NAVIGATION
+========================================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <div class="logo">
+
+            <a href="../index.html">
+                <span class="logo-orange">SOS</span>
+                <span class="logo-black">PREPA MATHS</span>
+            </a>
+
+        </div>
+
+
+        <ul class="nav-menu">
+
+            <li>
+                <a href="../index.html">Accueil</a>
+            </li>
+
+            <li>
+                <a href="guide.html">LE GUIDE</a>
+            </li>
+
+            <li>
+                <a href="etapes.html">LES 7 ETAPES</a>
+            </li>
+
+            <li>
+                <a href="coach-prof.html">
+                    Pourquoi Coach-Prof de Maths
+                </a>
+            </li>
+
+            <li>
+                <a href="#">Vos interrogations</a>
+            </li>
+
+            <li>
+                <a href="../mathematiques.html" class="math-active">
+                    MATHÉMATIQUES
+                </a>
+            </li>
+
+            <li>
+                <a href="#">Vidéos</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================
+     PAGE MPSI
+========================================= -->
+
+<main class="mpsi-page">
+
+
+    <!-- =====================================
+         INTRODUCTION
+    ====================================== -->
+
+    <section class="mpsi-hero">
+
+        <div class="mpsi-hero-inner">
+
+            <span class="mpsi-kicker">
+                MATHÉMATIQUES — PREMIÈRE ANNÉE
+            </span>
+
+            <h1>
+                PROGRAMME <span>MPSI</span>
+            </h1>
+
+            <p>
+                Retrouvez ici l'ossature du programme de mathématiques
+                de première année de Prépa MPSI.
+            </p>
+
+            <p>
+                Les notions seront progressivement enrichies par des
+                <strong>méthodes</strong>, des <strong>astuces</strong>,
+                des <strong>recommandations</strong> et des
+                <strong>erreurs fréquentes</strong>.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         I. LES FONDAMENTAUX
+    ====================================== -->
+
+    <section class="mpsi-program">
+
+        <div class="mpsi-section-heading">
+
+            <span>I. LES FONDAMENTAUX</span>
+
+            <h2>
+                Construire les bases
+            </h2>
+
+            <div class="mpsi-heading-line"></div>
+
+        </div>
+
+
+        <div class="mpsi-domain-grid">
+
+
+            <!-- LOGIQUE & ENSEMBLES -->
+
+            <div class="mpsi-domain-card">
+
+                <div class="mpsi-domain-header">
+
+                    <div class="mpsi-domain-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Logique &amp; ensembles
+                    </h3>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Vocabulaire
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Raisonnement
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Récurrence
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Ensembles et applications
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- NOMBRES & CALCUL ALGÉBRIQUE -->
+
+            <div class="mpsi-domain-card">
+
+                <div class="mpsi-domain-header">
+
+                    <div class="mpsi-domain-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Nombres &amp; calcul algébrique
+                    </h3>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Nombres réels
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Nombres complexes
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Sommes et produits
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Calcul algébrique
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ANALYSE -->
+
+            <div class="mpsi-domain-card mpsi-domain-large">
+
+                <div class="mpsi-domain-header">
+
+                    <div class="mpsi-domain-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Analyse
+                    </h3>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Suites
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Limites
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Continuité
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Dérivation
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Fonctions usuelles
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Convexité
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Primitives
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Équations différentielles
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ALGÈBRE & ARITHMÉTIQUE -->
+
+            <div class="mpsi-domain-card">
+
+                <div class="mpsi-domain-header">
+
+                    <div class="mpsi-domain-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Algèbre &amp; arithmétique
+                    </h3>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Arithmétique
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Structures algébriques
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Polynômes
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Fractions rationnelles
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Matrices
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Systèmes linéaires
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- DÉNOMBREMENT & PROBABILITÉS -->
+
+            <div class="mpsi-domain-card">
+
+                <div class="mpsi-domain-header">
+
+                    <div class="mpsi-domain-number">
+                        05
+                    </div>
+
+                    <h3>
+                        Dénombrement &amp; probabilités
+                    </h3>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Dénombrement
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Probabilités sur un univers fini
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         II. APPROFONDISSEMENTS
+    ====================================== -->
+
+    <section class="mpsi-program mpsi-advanced">
+
+        <div class="mpsi-section-heading">
+
+            <span>II. APPROFONDISSEMENTS</span>
+
+            <h2>
+                Aller plus loin
+            </h2>
+
+            <div class="mpsi-heading-line"></div>
+
+        </div>
+
+
+        <div class="mpsi-domain-grid">
+
+
+            <!-- ANALYSE AVANCÉE -->
+
+            <div class="mpsi-domain-card">
+
+                <div class="mpsi-domain-header">
+
+                    <div class="mpsi-domain-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Analyse avancée
+                    </h3>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Développements limités
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Calcul asymptotique
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Intégration
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Séries numériques
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Fonctions de plusieurs variables
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Arcs paramétrés
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ALGÈBRE LINÉAIRE & GÉOMÉTRIE -->
+
+            <div class="mpsi-domain-card">
+
+                <div class="mpsi-domain-header">
+
+                    <div class="mpsi-domain-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Algèbre linéaire &amp; géométrie
+                    </h3>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Espaces vectoriels
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Applications linéaires
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Dimension
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Matrices
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Déterminants
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Espaces préhilbertiens
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Géométrie euclidienne
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Sous-espaces affines
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- PROBABILITÉS -->
+
+            <div class="mpsi-domain-card">
+
+                <div class="mpsi-domain-header">
+
+                    <div class="mpsi-domain-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Probabilités
+                    </h3>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Variables aléatoires discrètes
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Espérance
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Variance
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Lois usuelles
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Théorèmes limites
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="math-footer">
+
+    <p>
+        © SOS PREPA MATHS
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

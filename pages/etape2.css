@@ -1,0 +1,705 @@
+/* ==========================================================================
+   1. VARIABLES DE COULEUR & RESET
+   ========================================================================== */
+:root {
+    --dark-navy: #151828;      /* Fond sombre bandeau supérieur & footer */
+    --accent-orange: #ff6b00;   /* Couleur orange d'accentuation */
+    --white: #ffffff;
+    --text-dark: #1f2335;
+    --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main-content {
+    flex: 1; /* Pousse le footer vers le bas */
+}
+
+/* ==========================================================================
+   2. BANDEAU SUPÉRIEUR (RÉSEAUX SOCIAUX)
+   ========================================================================== */
+.top-bar {
+    background-color: var(--dark-navy);
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-links a {
+    color: var(--white);
+    margin-left: 15px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-orange);
+}
+
+/* ==========================================================================
+   3. BARRE DE NAVIGATION
+   ========================================================================== */
+.main-header {
+    background-color: var(--white);
+    padding: 18px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 1000;
+}
+
+.logo-bold {
+    color: #ff6b00;
+}
+
+.logo-orange {
+    color: #111111;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 1rem;
+    font-weight: 800px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+    color: var(--accent-orange);
+    border-bottom: 2px solid var(--accent-orange);
+    padding-bottom: 4px;
+}
+
+/* ==========================================================================
+   4. FOOTER (PIED DE PAGE)
+   ========================================================================== */
+.main-footer {
+    background-color: var(--dark-navy);
+    color: var(--white);
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex; /* Utilisation de flexbox pour un meilleur contrôle de l'alignement */
+    justify-content: space-between; /* Distribue l'espace pour pousser Contact tout à droite */
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 15px; /* Réduit l'espace sous le contenu (anciennement 30px) */
+}
+
+/* 1. Rapprocher le titre/logo du texte en dessous */
+.footer-col h3 {
+    color: var(--accent-orange);
+    margin-bottom: 4px; /* Espace réduit au minimum (anciennement 15px) */
+    font-size: 1.2rem;
+}
+
+.footer-col p {
+    margin-top: 0;
+    line-height: 1.4;
+}
+
+.footer-col h4 {
+    margin-bottom: 8px; /* Espacement resserré des sous-titres */
+    font-size: 0.95rem;
+}
+
+.footer-col ul{ 
+list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 4px; /* Espace resserré entre les liens */
+}
+
+/* 2. Aligner le bloc Contact tout à droite */
+
+
+/* 3. Réduire la hauteur du bandeau de copyright tout en bas */
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 8px 0; /* Padding réduit (anciennement 15px) */
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* ==========================================================================
+   FOOTER COMPLET ET ALIGNÉ
+   ========================================================================== */
+.main-footer {
+    background-color: #1f0d5f;
+    color: var(--white);
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 15px;
+}
+
+/* Colonne Gauche : Logo + description */
+.footer-col:first-child {
+    text-align: left;
+    max-width: 450px;
+}
+
+.footer-col h3 {
+    color: var(--accent-orange);
+    margin-bottom: 4px; /* Rapproche le logo du texte */
+    font-size: 1.2rem;
+}
+
+.footer-col p {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Colonne Droite : Contact */
+
+
+.footer-col:last-child h4 {
+    color: var(--white);
+    font-size: 1rem;
+    margin-bottom: 6px; /* Espace juste au-dessus de l'email */
+}
+
+.footer-col:last-child p {
+    text-align: right;
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-col:last-child i {
+    margin-right: 6px;
+    color: var(--accent-orange);
+}
+
+/* Bandeau de copyright bas */
+.footer-bottom {
+    background-color: #111111;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==========================================================================
+   5. RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 900px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+}
+/* ==========================================================
+   PAGE
+========================================================== */
+
+.step-page {
+    width: 100%;
+
+    padding: 70px 28px 85px;
+
+    background: #f7f8fa;
+    
+}
+
+.step-container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+    
+}
+
+
+/* ==========================================================
+   INTRODUCTION
+========================================================== */
+
+.step-intro {
+    max-width: 900px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.step-kicker {
+    display: inline-block;
+    margin: 0 0 15px;
+    padding: 0.4rem 1.6rem;
+    background: #F57C00;
+    color: #FFFFFF;
+    font-size: 0.92rem;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    
+}
+
+.step-intro h1 {
+    margin: 0;
+
+    color: #0B2545;
+
+    font-size: 2.6rem;
+    line-height: 1.15;
+
+    font-weight: 800;
+}
+
+.step-intro h1 span {
+    color: #F57C00;
+}
+
+.step-title-line {
+    width: 52px;
+    height: 4px;
+
+    margin: 25px auto;
+
+    background: #F57C00;
+    border: radius 4px;
+}
+
+.step-intro > p:not(.step-kicker) {
+    max-width: 820px;
+
+    margin: 0 auto 15px;
+
+    color: #333333;
+
+    font-size: 1.06rem;
+    line-height: 1.7;
+}
+
+
+/* ==========================================================
+   CHAPITRES
+========================================================== */
+
+.chapter-card {
+    margin-bottom: 24px;
+
+    padding: 32px 35px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    border-left: 5px solid #F57C00;
+    box-shadow:
+        0 4px 13px rgba(0, 0, 0, 0.06);
+}
+
+
+/* NUMÉRO */
+
+.chapter-number {
+    margin-bottom: 12px;
+
+    color: #F57C00;
+
+    font-size: 0.82rem;
+    font-weight: 800;
+
+    letter-spacing: 1.3px;
+    border-radius: 50px;
+}
+
+
+/* TITRE */
+
+.chapter-card h2 {
+    margin: 0 0 18px;
+
+    color: #0B2545;
+
+    font-size: 1.55rem;
+    line-height: 1.25;
+
+    font-weight: 800;
+}
+
+
+/* TEXTE */
+
+.chapter-card p {
+    max-width: 900px;
+
+    margin: 0 0 15px;
+
+    color: #444444;
+
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* ==========================================================
+   ENCADRÉ « À RETENIR »
+========================================================== */
+
+.important-box {
+    margin-top: 25px;
+
+    padding: 18px 20px;
+
+    background: #fff7ef;
+
+    border-left: 4px solid #F57C00;
+    border-radius:10px;
+}
+
+.important-box strong {
+    color: #0B2545;
+
+    font-size: 0.95rem;
+}
+
+.important-box p {
+    margin: 7px 0 0;
+
+    color: #444444;
+
+    font-size: 0.94rem;
+    line-height: 1.55;
+}
+
+.important-box p span {
+    color: #F57C00;
+
+    font-weight: 700;
+}
+
+
+/* ==========================================================
+   CITATION
+========================================================== */
+
+.quote-box {
+    margin: 24px 0;
+
+    padding: 18px 22px;
+
+    background: #f7f8fa;
+
+    border-left: 4px solid #F57C00;
+    border-radius:10px;
+}
+
+.quote-box p {
+    margin: 0;
+
+    color: #0B2545;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+
+    line-height: 1.55;
+}
+
+
+/* ==========================================================
+   L'ESSENTIEL DE L'ÉTAPE
+========================================================== */
+
+.step-essential {
+    max-width: 1100px;
+
+    margin: 65px auto 0;
+
+    padding: 35px 38px;
+
+    background: #0B2545;
+
+    text-align: center;
+    border-radius: 20px;
+    border-left: 5px solid #F57C00;
+}
+
+.essential-kicker {
+    margin: 0 0 12px;
+
+    color: #F57C00 !important;
+
+    font-size: 0.82rem !important;
+    font-weight: 800;
+
+    letter-spacing: 1.3px;
+}
+
+.step-essential h2 {
+    margin: 0 0 20px;
+
+    color: #FFFFFF;
+
+    font-size: 1.8rem;
+    line-height: 1.25;
+}
+
+.step-essential > p:not(.essential-kicker) {
+    max-width: 760px;
+
+    margin: 0 auto 14px;
+
+    color: #e9edf3;
+
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.step-essential .essential-final {
+    margin-top: 22px;
+
+    color: #FFFFFF;
+}
+
+.step-essential .essential-final strong {
+    color: #F57C00;
+}
+
+
+/* ==========================================================
+   NAVIGATION ENTRE LES ÉTAPES
+========================================================== */
+
+.step-navigation {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 50px;
+}
+
+.step-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 42px;
+
+    padding: 13px 24px;
+
+    font-size: 0.9rem;
+    font-weight: 800;
+
+    text-decoration: none;
+    border-radius: 50px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.step-button.primary {
+    color: #FFFFFF;
+
+    background: #F57C00;
+}
+
+.step-button.primary:hover {
+    background: #DF6F00;
+
+    transform: translateY(-2px);
+}
+
+.step-button.secondary {
+    color: #F57C00;
+
+    background: #FFFFFF;
+
+    border: 2px solid #F57C00;
+}
+
+.step-button.secondary:hover {
+    color: #FFFFFF;
+
+    background: #F57C00;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================================
+   TABLETTE
+========================================================== */
+
+@media (max-width: 900px) {
+
+    .step-page {
+        padding: 60px 24px 70px;
+    }
+
+    .site-header {
+        height: auto;
+    }
+
+    .nav-container {
+        height: auto;
+        min-height: 70px;
+
+        flex-wrap: wrap;
+
+        padding: 15px 20px;
+
+        gap: 15px;
+    }
+
+    .site-header .main-nav {
+        width: 100%;
+
+        margin: 0;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px 18px;
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 600px) {
+
+    .step-page {
+        padding: 48px 17px 60px;
+    }
+
+    .step-intro {
+        margin-bottom: 40px;
+    }
+
+    .step-intro h1 {
+        font-size: 2rem;
+    }
+
+    .step-intro > p:not(.step-kicker) {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .chapter-card {
+        padding: 25px 22px;
+
+        margin-bottom: 18px;
+    }
+
+    .chapter-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .chapter-card p {
+        font-size: 0.94rem;
+        line-height: 1.65;
+    }
+
+    .important-box {
+        padding: 16px 17px;
+    }
+
+    .important-box p {
+        font-size: 0.9rem;
+    }
+
+    .quote-box {
+        padding: 16px 18px;
+    }
+
+    .quote-box p {
+        font-size: 0.96rem;
+    }
+
+    .step-essential {
+        margin-top: 50px;
+
+        padding: 28px 22px;
+    }
+
+    .step-essential h2 {
+        font-size: 1.55rem;
+    }
+
+    .step-essential > p:not(.essential-kicker) {
+        font-size: 0.94rem;
+        line-height: 1.6;
+    }
+
+    .step-navigation {
+        flex-direction: column;
+
+        margin-top: 40px;
+    }
+
+    .step-button {
+        width: 100%;
+        max-width: 340px;
+    }
+
+}

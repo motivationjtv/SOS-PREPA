@@ -1,0 +1,552 @@
+.organise-hero {
+    background: #f7f7f7;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.organise-hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    padding: 75px 25px 70px;
+}
+
+.page-number {
+    color: #ff7900;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.organise-hero h1 {
+    margin: 0;
+
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.orange-line {
+    width: 55px;
+    height: 3px;
+
+    background: #ff7900;
+
+    margin: 22px auto;
+}
+
+.hero-baseline {
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   STRUCTURE
+========================================= */
+
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.content-section {
+    padding: 65px 0;
+}
+
+.introduction {
+    text-align: center;
+}
+
+.introduction h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    max-width: 700px;
+    margin: 10px auto;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.intro-highlight {
+    color: #ff7900;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   TITRES DE SECTION
+========================================= */
+
+.day-section,
+.weekend-section,
+.sunday-section {
+    padding: 75px 0;
+}
+
+.weekend-section {
+    background: #f7f7f7;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading.light {
+    color: #ffffff;
+}
+
+.section-label {
+    display: block;
+
+    color: #ff7900;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    margin: 0 0 10px;
+
+    font-size: 32px;
+}
+
+.section-heading p {
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   JOURNEE
+========================================= */
+
+.time-card {
+    background: #ffffff;
+
+    border-left: 4px solid #ff7900;
+
+    margin-bottom: 25px;
+
+    padding: 28px 30px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.time-header {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+.time-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #ff7900;
+
+    color: #ff7900;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    flex-shrink: 0;
+}
+
+.time-period {
+    display: block;
+
+    color: #ff7900;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    margin-bottom: 5px;
+}
+
+.time-header h3 {
+    margin: 0;
+
+    font-size: 22px;
+}
+
+.time-block {
+    padding: 15px 0;
+
+    border-top: 1px solid #eeeeee;
+}
+
+.time-block:first-child {
+    border-top: none;
+}
+
+.time-block strong {
+    display: block;
+
+    font-size: 15px;
+
+    margin-bottom: 7px;
+}
+
+.time-block p {
+    margin: 0;
+
+    line-height: 1.65;
+}
+
+.time-block .important {
+    margin-top: 10px;
+
+    color: #ff7900;
+
+    font-weight: 700;
+}
+
+.sleep-warning {
+    margin-top: 20px;
+
+    padding: 18px;
+
+    background: #171717;
+
+    color: #ffffff;
+}
+
+.sleep-warning strong {
+    color: #ff7900;
+}
+
+.sleep-warning p {
+    margin: 7px 0 0;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   PRINCIPES
+========================================= */
+
+.principles-section {
+    padding: 75px 0;
+
+    background: #171717;
+}
+
+.principles-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.principle-card {
+    border: 1px solid #444444;
+
+    padding: 28px;
+
+    color: #ffffff;
+}
+
+.principle-card > span {
+    color: #ff7900;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.principle-card h3 {
+    margin: 14px 0;
+
+    font-size: 19px;
+}
+
+.principle-card p {
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   SAMEDI
+========================================= */
+
+.weekend-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.weekend-card {
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #dddddd;
+
+    border-top: 3px solid #ff7900;
+}
+
+.weekend-time {
+    color: #ff7900;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.weekend-card h3 {
+    margin: 12px 0;
+
+    font-size: 19px;
+}
+
+.weekend-card p {
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+.break-card {
+    background: #171717;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   DIMANCHE
+========================================= */
+
+.sunday-section {
+    background: #ffffff;
+}
+
+.sunday-timeline {
+    border-left: 3px solid #ff7900;
+
+    padding-left: 30px;
+}
+
+.sunday-item {
+    display: grid;
+
+    grid-template-columns: 150px 1fr;
+
+    gap: 25px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.sunday-time {
+    color: #ff7900;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.sunday-item h3 {
+    margin: 0 0 8px;
+
+    font-size: 19px;
+}
+
+.sunday-item p {
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+.sleep-box {
+    margin-top: 35px;
+
+    padding: 25px;
+
+    background: #171717;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.sleep-box strong {
+    color: #ff7900;
+
+    font-size: 18px;
+}
+
+.sleep-box p {
+    margin: 8px 0 0;
+}
+
+
+/* =========================================
+   CONCLUSION
+========================================= */
+
+.final-message {
+    padding: 80px 0;
+
+    text-align: center;
+
+    background: #f7f7f7;
+}
+
+.final-line {
+    width: 45px;
+    height: 3px;
+
+    background: #ff7900;
+
+    margin: 0 auto 25px;
+}
+
+.final-message h2 {
+    margin: 0 0 8px;
+
+    font-size: 29px;
+}
+
+.final-message strong {
+    display: block;
+
+    color: #ff7900;
+
+    font-size: 29px;
+}
+
+.final-message p {
+    max-width: 650px;
+
+    margin: 22px auto 0;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.page-navigation {
+    border-top: 1px solid #eeeeee;
+
+    padding: 30px 0;
+}
+
+.page-navigation .content-container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-link,
+.next-link {
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.back-link {
+    color: #222;
+}
+
+.next-link {
+    color: #ff7900;
+}
+
+.back-link:hover,
+.next-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .main-nav {
+        display: none;
+    }
+
+    .organise-hero h1 {
+        font-size: 34px;
+    }
+
+    .principles-grid,
+    .weekend-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .organise-hero-inner {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .organise-hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-baseline {
+        font-size: 17px;
+    }
+
+    .time-card {
+        padding: 20px;
+    }
+
+    .time-header h3 {
+        font-size: 19px;
+    }
+
+    .sunday-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .page-navigation .content-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

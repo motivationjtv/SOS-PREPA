@@ -1,0 +1,531 @@
+/* ==========================================================
+   PAGE MATHÉMATIQUES — PROGRAMME MP
+   ========================================================== */
+
+/* ==========================================================
+   TOP BAR
+   ========================================================== */
+
+.top-bar {
+    background: #ffffff;
+    padding: 8px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.top-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #1a1a1a;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+}
+
+.social-icons a:hover {
+    opacity: 1;
+    color: #F57C00;
+}
+
+/* ==========================================================
+   NAVIGATION PRINCIPALE — FOND BLANC
+   ========================================================== */
+
+.navbar {
+    background: #ffffff;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #F57C00;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+/* LOGO */
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.logo-orange {
+    color: #F57C00;
+}
+
+.logo-black {
+    color: #1a1a1a;
+}
+
+/* MENU NAVIGATION */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu li a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav-menu li a:hover {
+    background: rgba(245, 124, 0, 0.08);
+    color: #F57C00;
+}
+
+/* Lien actif "MATHÉMATIQUES" */
+.nav-menu li a.math-active {
+    background: #F57C00;
+    color: #ffffff;
+}
+
+.nav-menu li a.math-active:hover {
+    background: #e06b00;
+}
+
+/* Indicateur de page active */
+.nav-menu li a.math-active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 3px;
+    background: #F57C00;
+    border-radius: 2px;
+}
+
+/* ==========================================================
+   CONTENEUR GÉNÉRAL
+   ========================================================== */
+
+.mp-page {
+    width: 100%;
+    background: #f4f4fb;
+}
+
+/* ==========================================================
+   HERO MP
+   ========================================================== */
+
+.mp-hero {
+    background: #19182f;
+    color: #ffffff;
+    padding: 75px 20px 80px;
+    text-align: center;
+}
+
+.mp-hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mp-kicker {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #F57C00;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.mp-hero h1 {
+    margin: 0 0 22px;
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+.mp-hero h1 span {
+    color: #F57C00;
+}
+
+.mp-hero p {
+    max-width: 720px;
+    margin: 8px auto;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.mp-hero strong {
+    color: #F57C00;
+    font-weight: 600;
+}
+
+/* ==========================================================
+   SECTIONS PROGRAMME
+   ========================================================== */
+
+.mp-program {
+    padding: 75px 20px 85px;
+}
+
+.mp-section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.mp-section-heading > span {
+    display: block;
+    margin-bottom: 10px;
+    color: #F57C00;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.mp-section-heading h2 {
+    margin: 0;
+    color: #171717;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.mp-heading-line {
+    width: 42px;
+    height: 3px;
+    margin: 18px auto 0;
+    background: #F57C00;
+}
+
+/* ==========================================================
+   GRILLE DES DOMAINES
+   ========================================================== */
+
+.mp-domain-grid {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* ==========================================================
+   CARTES — FOND BLANC, TEXTES NOIRS
+   ========================================================== */
+
+.mp-domain-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 18px;
+    padding: 30px 30px 28px;
+    box-shadow: 0 8px 25px rgba(20, 20, 50, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border-left: 5px solid #F57C00;
+}
+
+.mp-domain-card:hover {
+    transform: translateY(-4px);
+    border-color: #F57C00;
+    box-shadow: 0 14px 32px rgba(20, 20, 50, 0.10);
+}
+
+/* ==========================================================
+   EN-TÊTE DES CARTES
+   ========================================================== */
+
+.mp-domain-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+.mp-domain-number {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F57C00;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.mp-domain-header h3 {
+    margin: 0;
+    color: #1a1a1a;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+/* ==========================================================
+   LISTE DES NOTIONS
+   ========================================================== */
+
+.mp-domain-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mp-domain-card li {
+    border-top: 1px solid #eeeeee;
+}
+
+.mp-domain-card li:first-child {
+    border-top: none;
+}
+
+.mp-domain-card li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 11px 2px;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.25s ease, padding-left 0.25s ease;
+}
+
+.mp-domain-card li a i {
+    color: #1a1a1a;
+    font-size: 11px;
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.mp-domain-card li a:hover {
+    color: #F57C00;
+    padding-left: 6px;
+}
+
+.mp-domain-card li a:hover i {
+    color: #F57C00;
+    transform: translateX(4px);
+}
+
+/* ==========================================================
+   CARTE GRANDE (sur 2 colonnes)
+   ========================================================== */
+
+.mp-domain-large {
+    grid-column: span 2;
+}
+
+/* ==========================================================
+   DEUXIÈME PARTIE — APPROFONDISSEMENTS
+   ========================================================== */
+
+.mp-advanced {
+    background: #f5f5fa;
+}
+
+.mp-advanced .mp-domain-card {
+    background: #ffffff;
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+.math-footer {
+    background: #19182f;
+    color: #ffffff;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+.math-footer p {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 1024px) {
+    .nav-menu li a {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-container {
+        height: 60px;
+        position: relative;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        flex-direction: column;
+        padding: 20px;
+        gap: 4px;
+        border-bottom: 2px solid #F57C00;
+        display: none;
+        width: 100%;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-menu li a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 16px;
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    .nav-menu li a.math-active::after {
+        display: none;
+    }
+
+    /* Menu hamburger */
+    .navbar .hamburger {
+        display: block !important;
+        color: #1a1a1a;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .mp-hero {
+        padding: 60px 20px 65px;
+    }
+
+    .mp-hero h1 {
+        font-size: 36px;
+    }
+
+    .mp-domain-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mp-domain-large {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .top-bar {
+        display: none;
+    }
+
+    .logo a {
+        font-size: 16px;
+    }
+
+    .nav-container {
+        height: 55px;
+    }
+
+    .nav-menu {
+        top: 55px;
+    }
+
+    .mp-hero {
+        padding: 50px 17px 55px;
+    }
+
+    .mp-kicker {
+        font-size: 10px;
+    }
+
+    .mp-hero h1 {
+        font-size: 30px;
+    }
+
+    .mp-hero p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .mp-program {
+        padding: 55px 17px 60px;
+    }
+
+    .mp-section-heading {
+        margin-bottom: 32px;
+    }
+
+    .mp-section-heading h2 {
+        font-size: 25px;
+    }
+
+    .mp-domain-card {
+        padding: 24px 20px;
+        border-radius: 15px;
+    }
+
+    .mp-domain-header {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .mp-domain-number {
+        width: 38px;
+        height: 38px;
+        font-size: 12px;
+    }
+
+    .mp-domain-header h3 {
+        font-size: 17px;
+    }
+
+    .mp-domain-card li a {
+        font-size: 13px;
+        padding: 10px 2px;
+    }
+}

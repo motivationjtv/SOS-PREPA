@@ -1,0 +1,412 @@
+/* =========================================
+   HERO
+========================================= */
+
+.discipline-hero {
+    background: #f7f7f7;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.discipline-hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    padding: 75px 25px 70px;
+}
+
+.page-number {
+    color: #ff7900;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.discipline-hero h1 {
+    margin: 0;
+
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.orange-line {
+    width: 55px;
+    height: 3px;
+
+    background: #ff7900;
+
+    margin: 22px auto;
+}
+
+.hero-baseline {
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   STRUCTURE
+========================================= */
+
+.content-section {
+    padding: 75px 0;
+}
+
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/* =========================================
+   TITRES
+========================================= */
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading.light {
+    color: #ffffff;
+}
+
+.section-label {
+    display: block;
+
+    color: #ff7900;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    margin: 0 0 12px;
+
+    font-size: 32px;
+}
+
+.section-heading p {
+    max-width: 700px;
+
+    margin: 0;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   COMPARAISON
+========================================= */
+
+.comparison-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.comparison-card {
+    padding: 30px;
+
+    border: 1px solid #dddddd;
+
+    border-top: 4px solid #ff7900;
+}
+
+.comparison-number {
+    color: #ff7900;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.comparison-card h3 {
+    margin: 14px 0;
+
+    font-size: 22px;
+}
+
+.comparison-card p {
+    margin: 0;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   MESSAGE CENTRAL
+========================================= */
+
+.key-message {
+    margin-top: 35px;
+
+    padding: 30px;
+
+    background: #171717;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.key-message p {
+    margin: 0;
+}
+
+.key-message strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    margin: 7px 0;
+}
+
+.key-message strong:last-child {
+    color: #ff7900;
+}
+
+
+/* =========================================
+   DISCIPLINE CONCRÈTE
+========================================= */
+
+.discipline-section {
+    padding: 75px 0;
+
+    background: #171717;
+}
+
+.rules-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.rule-card {
+    padding: 28px;
+
+    border: 1px solid #444444;
+
+    color: #ffffff;
+}
+
+.rule-card > span {
+    color: #ff7900;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.rule-card h3 {
+    margin: 14px 0;
+
+    font-size: 19px;
+}
+
+.rule-card p {
+    margin: 0;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   LES RAILS
+========================================= */
+
+.rails-section {
+    padding: 80px 0;
+
+    background: #f7f7f7;
+}
+
+.rails-content {
+    max-width: 700px;
+}
+
+.rails-content h2 {
+    margin: 0 0 25px;
+
+    font-size: 36px;
+}
+
+.rails-content p {
+    font-size: 17px;
+
+    line-height: 1.75;
+
+    margin: 12px 0;
+}
+
+.rails-highlight {
+    margin-top: 35px;
+
+    padding: 25px;
+
+    border-left: 4px solid #ff7900;
+
+    background: #ffffff;
+}
+
+.rails-highlight strong {
+    display: block;
+
+    font-size: 23px;
+}
+
+.rails-highlight span {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #ff7900;
+
+    font-size: 23px;
+    font-weight: 800;
+}
+
+
+/* =========================================
+   TRANSITION
+========================================= */
+
+.transition-box {
+    max-width: 700px;
+
+    padding: 30px;
+
+    border: 1px solid #dddddd;
+
+    border-left: 4px solid #ff7900;
+}
+
+.transition-box p {
+    margin: 0 0 15px;
+
+    line-height: 1.7;
+}
+
+.transition-box p:last-of-type {
+    margin-bottom: 20px;
+}
+
+.transition-box strong {
+    color: #ff7900;
+
+    font-size: 18px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.page-navigation {
+    border-top: 1px solid #eeeeee;
+
+    padding: 30px 0;
+}
+
+.page-navigation .content-container {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-link,
+.next-link {
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.back-link {
+    color: #222;
+}
+
+.next-link {
+    color: #ff7900;
+}
+
+.back-link:hover,
+.next-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .main-nav {
+        display: none;
+    }
+
+    .discipline-hero h1 {
+        font-size: 34px;
+    }
+
+    .comparison-grid,
+    .rules-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .discipline-hero-inner {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .discipline-hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-baseline {
+        font-size: 17px;
+    }
+
+    .content-section,
+    .discipline-section,
+    .rails-section {
+        padding: 55px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .page-navigation .content-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
