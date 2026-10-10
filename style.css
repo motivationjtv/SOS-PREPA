@@ -105,7 +105,7 @@ body {
     text-decoration: none;
     color: #111111;
     font-size: 1rem;
-    font-weight: 800px;
+    font-weight: 800;
     transition: color 0.3s ease;
 }
 
@@ -2411,11 +2411,11 @@ body.bg-light-gray {
    LIEN MATHÉMATIQUES ACTIF
 ========================================== */
 
-.nav-menu a.math-active {
+.nav-menu a.active {
     color: #ff7a00;
 }
 
-.nav-menu a.math-active::after {
+.nav-menu a.active::after {
     width: 100%;
     background: #ff7a00;
 }
@@ -4278,17 +4278,17 @@ body.bg-light-gray {
             }
         }
         /* Lien actif "MATHÉMATIQUES" */
-.nav-menu li a.math-active {
+.nav-menu li a.active {
     background: #F57C00;
     color: #ffffff;
 }
 
-.nav-menu li a.math-active:hover {
+.nav-menu li a.active:hover {
     background: #e06b00;
 }
 
 /* Indicateur de page active */
-.nav-menu li a.math-active::after {
+.nav-menu li a.active::after {
     content: '';
     position: absolute;
     bottom: -2px;
@@ -4347,7 +4347,7 @@ body.bg-light-gray {
         white-space: normal;
     }
 
-    .nav-menu li a.math-active::after {
+    .nav-menu li a.active::after {
         display: none;
     }
 
@@ -5706,4 +5706,9 @@ body.bg-light-gray {
         gap: 20px;
     }
 
+}
+.main-nav a.active {
+  color: #ff7a00;
+  border-bottom: 3px solid #ff7a00;
+  font-weight: 600;
 }

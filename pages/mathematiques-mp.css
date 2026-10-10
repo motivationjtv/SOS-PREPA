@@ -111,17 +111,17 @@
 }
 
 /* Lien actif "MATHÉMATIQUES" */
-.nav-menu li a.math-active {
+.nav-menu li a.active {
     background: #F57C00;
     color: #ffffff;
 }
 
-.nav-menu li a.math-active:hover {
+.nav-menu li a.active:hover {
     background: #e06b00;
 }
 
 /* Indicateur de page active */
-.nav-menu li a.math-active::after {
+.nav-menu li a.active::after {
     content: '';
     position: absolute;
     bottom: -2px;
@@ -428,7 +428,7 @@
         white-space: normal;
     }
 
-    .nav-menu li a.math-active::after {
+    .nav-menu li a.active::after {
         display: none;
     }
 
